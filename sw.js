@@ -7,7 +7,7 @@
  * CACHE_VERSION is stamped with the build time, so every deploy forces a full
  * cache refresh on the next visit.
  */
-const CACHE_VERSION = "1791740973";
+const CACHE_VERSION = "1791741302";
 const HTML_CACHE = `html-${CACHE_VERSION}`;
 const ASSET_CACHE = `assets-${CACHE_VERSION}`;
 
