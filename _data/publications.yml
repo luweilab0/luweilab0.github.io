@@ -5,6 +5,7 @@
 #   year    年份 / publication year
 #   authors 作者列表（结尾不加句号；"Lu W*" 中的星号表示通讯作者）
 #           author list (no trailing period; "*" marks the corresponding author)
+#           "†" 表示共同第一作者 / "†" marks co-first authors (equal contribution)
 #   title   标题（保留结尾标点：通常以 . 结尾，以 ? 结尾的标题不再加句号）
 #           paper title (keep the ending punctuation: usually ".", titles ending in "?" get no period)
 #   journal 期刊名 / journal name
@@ -108,7 +109,7 @@
   detail: '42(47), 8758-8766'
 
 - year: 2022
-  authors: 'Wu K, Shepard RD, Castellano D, Han W, Tian Q, Dong L, Lu W*'
+  authors: 'Wu K†, Shepard RD†, Castellano D, Han W, Tian Q, Dong L, Lu W*'
   title: 'Shisa7 phosphorylation regulates GABAergic transmission and neurodevelopmental behaviors.'
   journal: 'Neuropsychopharmacology'
   detail: '47(12), 2160-2170'
@@ -132,13 +133,13 @@
   detail: '34(12), 108899'
 
 - year: 2021
-  authors: 'Han W, Shepard RD, Lu W*'
+  authors: 'Han W†, Shepard RD†, Lu W*'
   title: 'Regulation of GABA(A)Rs by transmembrane accessory proteins.'
   journal: 'Trends in Neurosciences'
   detail: '44(2), 152-165'
 
 - year: 2021
-  authors: 'Castellano D, Shepard RD, Lu W*'
+  authors: 'Castellano D†, Shepard RD†, Lu W*'
   title: 'Looking for novelty in an "old" receptor: recent advances toward our understanding of GABA(A)Rs and their implications in receptor pharmacology.'
   journal: 'Frontiers in Neuroscience'
   detail: '14, 616298'
@@ -168,7 +169,7 @@
   detail: '106(1), 37-65'
 
 - year: 2019
-  authors: 'Han W, Li J, Pelkey KA, Pandey S, Chen X, Wang YX, Wu K, Ge L, Li T, Castellano D, Liu C, Wu LG, Petralia RS, Lynch JW, McBain CJ, Lu W*'
+  authors: 'Han W, Li J†, Pelkey KA†, Pandey S, Chen X, Wang YX, Wu K, Ge L, Li T, Castellano D, Liu C, Wu LG, Petralia RS, Lynch JW, McBain CJ, Lu W*'
   title: 'Shisa7 is a GABA(A) receptor auxiliary subunit controlling benzodiazepine actions.'
   journal: 'Science'
   detail: '366(6462), 246-250'
@@ -228,7 +229,7 @@
   detail: '96(4), 808-826'
 
 - year: 2017
-  authors: 'Han W, Wang H, Li J, Zhang S, Lu W*'
+  authors: 'Han W†, Wang H†, Li J, Zhang S, Lu W*'
   title: 'Ferric chelate reductase 1 like protein (FRRS1L) associates with dynein vesicles and regulates glutamatergic synaptic transmission.'
   journal: 'Frontiers in Molecular Neuroscience'
   detail: '10, 402'
@@ -258,7 +259,7 @@
   detail: '117(1), 28-35'
 
 - year: 2016
-  authors: 'Gu X, Mao X, Lussier MP, Hutchison MA, Zhou L, Hamra FK, Roche KW, Lu W*'
+  authors: 'Gu X†, Mao X†, Lussier MP†, Hutchison MA†, Zhou L, Hamra FK, Roche KW, Lu W*'
   title: 'GSG1L suppresses AMPA receptor-mediated synaptic transmission and uniquely modulates AMPA receptor kinetics in hippocampal neurons.'
   journal: 'Nature Communications'
   detail: '7, 10873'

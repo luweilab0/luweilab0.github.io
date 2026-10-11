@@ -10,7 +10,7 @@ nav_id: publications
     <div class="container">
       <h2>
         <span class="lang-zh">发表论文</span><span class="lang-en">Publications</span>
-        <span class="en-note"><span class="lang-zh">（共{{ site.data.publications | size }}篇，2026年10月更新；Lu W 加粗；* 为通讯作者）</span><span class="lang-en">({{ site.data.publications | size }} papers, updated Oct 2026; Lu W in bold; * corresponding author)</span></span>
+        <span class="en-note"><span class="lang-zh">（共{{ site.data.publications | size }}篇，2026年10月更新；Lu W 加粗；* 为通讯作者；† 为共同第一作者）</span><span class="lang-en">({{ site.data.publications | size }} papers, updated Oct 2026; Lu W in bold; * corresponding author; † co-first authors)</span></span>
       </h2>
 {% assign by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
 {% for group in by_year %}
