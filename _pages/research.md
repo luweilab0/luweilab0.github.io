@@ -9,7 +9,7 @@ nav: true
 nav_order: 2
 ---
 
-<h2 id="direction">Research Direction · 研究方向</h2>
+<h2 id="direction">Research Direction</h2>
 
 We study the development and functional regulation of GABAergic inhibitory synapses, and the neurobiological mechanisms underlying anxiety, depression, anesthesia, sleep, and alcohol action. Building on these mechanisms, our overall goal is to develop next-generation GABA-A-receptor-targeted therapeutics for brain disorders.
 
