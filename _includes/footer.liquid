@@ -1,0 +1,58 @@
+{% assign cur_lang = page.lang | default: 'en' %}
+{% if site.footer_fixed %}
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      {{ site.footer_text }}
+      <a
+        class="footer-smart-credit"
+        href="https://smart.org.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{% if cur_lang == 'zh' %}深圳医学科学院{% else %}Shenzhen Medical Academy of Research and Translation{% endif %}"
+      >
+        <img src="{{ '/assets/img/smart-icon.png' | relative_url }}" alt="" />
+        {% if cur_lang == 'zh' %}
+          深圳医学科学院
+        {% else %}
+          Shenzhen Medical Academy of Research and Translation
+        {% endif %}
+      </a>
+      {% if site.impressum_path %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+      {% endif %}
+      {% if site.last_updated %}
+        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+      {% endif %}
+    </div>
+  </footer>
+{% else %}
+  <footer class="sticky-bottom mt-5" role="contentinfo">
+    {% if site.newsletter.enabled %}
+      {% include newsletter.liquid %}
+    {% endif %}
+
+    <div class="container">
+      {{ site.footer_text }}
+      <a
+        class="footer-smart-credit"
+        href="https://smart.org.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{% if cur_lang == 'zh' %}深圳医学科学院{% else %}Shenzhen Medical Academy of Research and Translation{% endif %}"
+      >
+        <img src="{{ '/assets/img/smart-icon.png' | relative_url }}" alt="" />
+        {% if cur_lang == 'zh' %}
+          深圳医学科学院
+        {% else %}
+          Shenzhen Medical Academy of Research and Translation
+        {% endif %}
+      </a>
+      {% if site.impressum_path %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+      {% endif %}
+      {% if site.last_updated %}
+        Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+      {% endif %}
+    </div>
+  </footer>
+{% endif %}

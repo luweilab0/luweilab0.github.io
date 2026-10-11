@@ -1,0 +1,5 @@
+<td class="card-text font-weight-light" style="font-size: 2.0rem">
+  <b>{{ "其他文章"| capitalize }}</b>
+</td>
+
+{% bibliography --template cv_pub --group_by none --query @*[firstauthor!=true]* %}
