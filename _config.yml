@@ -189,6 +189,7 @@ exclude:
   - INSTALL.md
   - LICENSE
   - PLAN.md
+  - GUIDE.md
   - lighthouse_results/
   - package.json
   - package-lock.json
