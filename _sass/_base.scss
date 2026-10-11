@@ -1930,3 +1930,98 @@ ninja-keys::part(ninja-input-wrapper) {
     line-height: 1.35;
   }
 }
+
+// Deep navy navbar band on all pages (brand/tagline light, vermilion hover/active)
+#navbar.navbar {
+  background-color: #1b2a41;
+  border-bottom: none;
+  opacity: 1;
+
+  .navbar-brand.lab-brand {
+    color: #ffffff;
+
+    .brand-tag {
+      color: #c8d0dc;
+    }
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    color: #e8ebf0;
+
+    &:hover {
+      color: #d4654f;
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    color: #d4654f;
+
+    &:hover {
+      color: #d4654f;
+    }
+  }
+
+  .navbar-nav .nav-item.lang-toggle-item {
+    border-left-color: rgba(255, 255, 255, 0.25);
+
+    .nav-link.lang-toggle-btn {
+      color: #c8d0dc;
+      border-color: rgba(255, 255, 255, 0.35);
+
+      &:hover {
+        color: #d4654f;
+        border-color: #d4654f;
+      }
+    }
+  }
+
+  .mobile-nav-controls .mobile-lang-toggle {
+    color: #c8d0dc;
+    border-color: rgba(255, 255, 255, 0.35);
+
+    &:hover {
+      color: #d4654f;
+      border-color: #d4654f;
+    }
+  }
+
+  .navbar-toggler .icon-bar {
+    background-color: #ffffff;
+  }
+}
+
+// taller two-line brand navbar: keep the fixed-nav body offset in sync
+body.fixed-top-nav {
+  padding-top: 72px;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  scroll-margin-top: 80px;
+}
+
+// mobile dropdown panel stays light with dark text for readability
+@media (max-width: 575.98px) {
+  #navbar.navbar .navbar-collapse {
+    background-color: var(--global-bg-color);
+    margin: 0.5rem -12px -0.5rem;
+    padding: 0.5rem 12px;
+    border-radius: 6px;
+
+    .nav-item .nav-link {
+      color: var(--global-text-color);
+
+      &:hover {
+        color: var(--lulab-accent);
+      }
+    }
+
+    .nav-item.active > .nav-link {
+      color: var(--lulab-accent);
+    }
+  }
+}
