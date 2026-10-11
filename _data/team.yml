@@ -1,0 +1,32 @@
+# 团队成员卡片 / Team member cards — 目前为占位卡片 / currently placeholder cards
+# 每张卡片在 team.html 中渲染为一个 .card。
+# Each entry renders as one .card on team.html.
+# 字段 / fields:
+#   label_zh / label_en   卡片标签（中/英）/ card label (zh/en)
+#   text_zh  / text_en    卡片说明文字（中/英）/ card description (zh/en)
+# 添加真实成员时，可仿照下面的示例替换占位条目：
+# When adding a real member, replace a placeholder entry like this example:
+#   - label_zh: '张三'
+#     label_en: 'San Zhang'
+#     text_zh: '博士后 — 研究方向：GABA突触可塑性。'
+#     text_en: 'Postdoc — research focus: GABAergic synaptic plasticity.'
+
+- label_zh: '成员信息'
+  label_en: 'Member info'
+  text_zh: '请补充姓名、职位（博士后/研究生/研究助理）与研究方向。'
+  text_en: 'Please add name, role (postdoc / student / research assistant), and research focus.'
+
+- label_zh: '成员信息'
+  label_en: 'Member info'
+  text_zh: '请补充姓名、职位（博士后/研究生/研究助理）与研究方向。'
+  text_en: 'Please add name, role (postdoc / student / research assistant), and research focus.'
+
+- label_zh: '成员信息'
+  label_en: 'Member info'
+  text_zh: '请补充姓名、职位（博士后/研究生/研究助理）与研究方向。'
+  text_en: 'Please add name, role (postdoc / student / research assistant), and research focus.'
+
+- label_zh: '成员信息'
+  label_en: 'Member info'
+  text_zh: '请补充姓名、职位（博士后/研究生/研究助理）与研究方向。'
+  text_en: 'Please add name, role (postdoc / student / research assistant), and research focus.'

@@ -1,0 +1,40 @@
+# 新闻列表 / News items — 新的条目加在最上面 / add new items at the top
+# 字段 / fields:
+#   date       日期，格式 YYYY-MM / date, format YYYY-MM
+#   title_zh / title_en   标题（中/英）/ headline (zh/en)
+#   text_zh  / text_en    正文（中/英）/ body text (zh/en)
+#   link_url   可选：相关链接 / optional link URL
+#   link_zh / link_en     链接文字（中/英，需与 link_url 一起填）/ link label (zh/en)
+
+- date: '2025-06'
+  title_zh: '陆伟教授全职加盟深圳医学科学院'
+  title_en: 'Prof. Wei Lu joins SMART full-time'
+  text_zh: '陆伟教授自美国国立卫生研究院（NIH/NINDS）全职加盟深圳医学科学院，任资深研究员、神经调控与认知研究所（INC）副所长。'
+  text_en: 'Prof. Wei Lu joined SMART full-time from NIH/NINDS, appointed Senior Investigator and Deputy Director of the Institute of Neuromodulation and Cognition (INC).'
+  link_url: 'https://smart.org.cn/en/detail/985.html'
+  link_zh: '阅读SMART官方报道 →'
+  link_en: 'Read the official SMART announcement →'
+
+- date: '2025-01'
+  title_zh: '实验室招聘启事发布'
+  title_en: 'Lab recruitment announcement'
+  text_zh: '实验室招聘启事已在深圳医学科学院官网发布，欢迎有志于GABA突触研究的人才加入。'
+  text_en: 'The lab''s recruitment announcement is now live on the SMART website. Talented researchers interested in GABAergic synapse research are welcome to apply.'
+  link_url: 'https://smart.org.cn/career/research-lab/352.html'
+  link_zh: '查看招聘信息 →'
+  link_en: 'View the recruitment announcement →'
+
+- date: '2024-11'
+  title_zh: 'Cell 论文发表'
+  title_en: 'Cell paper published'
+  text_zh: 'TMEM132B–GABA-A受体复合物调控大脑中的酒精作用。'
+  text_en: 'The TMEM132B–GABA-A receptor complex controls alcohol actions in the brain.'
+
+- date: '2019-10'
+  title_zh: 'Science 论文发表并获NIH/NINDS新闻报道'
+  title_en: 'Science paper published, covered by NIH/NINDS press release'
+  text_zh: '发现Shisa7是GABA-A受体辅助亚基，调控苯二氮䓬类药物作用。'
+  text_en: 'Discovery of Shisa7 as a GABA-A receptor auxiliary subunit controlling benzodiazepine actions.'
+  link_url: 'https://www.ninds.nih.gov/news-events/news/press-releases/sticky-gene-may-help-valium-calm-nerves'
+  link_zh: '阅读NIH/NINDS新闻稿 →'
+  link_en: 'Read the NIH/NINDS press release →'

@@ -1,127 +1,35 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>新闻 · News — 陆伟实验室 · Lu Lab</title>
-  <meta name="description" content="陆伟实验室（分子认知实验室）新闻动态 — 深圳医学科学院。陆伟教授加盟SMART、实验室招聘与Cell、Science论文报道。">
-  <script>
-    (function () {
-      var lang = localStorage.getItem("lulab-lang") || "zh-CN";
-      document.documentElement.lang = lang;
-    })();
-  </script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
-</head>
-<body>
-
-<!-- ===== Shared header (keep identical on every page; set .active on current page link) ===== -->
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html">
-      <span class="brand-name"><span class="lang-zh">分子认知实验室</span><span class="lang-en">Molecular Cognition Lab</span></span>
-      <span class="brand-tag"><span class="lang-zh">研究GABA抑制性突触的发育、调控与疾病机制</span><span class="lang-en">Development, modulation, and disease mechanisms of GABAergic inhibitory synapses</span></span>
-    </a>
-    <button class="nav-hamburger" aria-label="Menu">☰</button>
-    <nav class="site-nav">
-      <a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
-      <a href="research.html"><span class="lang-zh">研究</span><span class="lang-en">Research</span></a>
-      <a href="team.html"><span class="lang-zh">团队</span><span class="lang-en">Team</span></a>
-      <a href="publications.html"><span class="lang-zh">论文</span><span class="lang-en">Publications</span></a>
-      <a href="news.html" class="active"><span class="lang-zh">新闻</span><span class="lang-en">News</span></a>
-      <a href="recruitment.html"><span class="lang-zh">招聘</span><span class="lang-en">Join Us</span></a>
-      <a href="contact.html"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></a>
-      <button class="lang-toggle" type="button">EN</button>
-    </nav>
-  </div>
-</header>
-
+---
+layout: default
+title: "新闻 · News — 陆伟实验室 · Lu Lab"
+description: "陆伟实验室（分子认知实验室）新闻动态 — 深圳医学科学院。陆伟教授加盟SMART、实验室招聘与Cell、Science论文报道。"
+nav_id: news
+---
 <main>
-  <!-- ===== News list ===== -->
+  <!-- ===== News list (edit _data/news.yml to add or change items) ===== -->
   <section class="section">
     <div class="container">
-
+{% for item in site.data.news %}
       <div class="news-item">
-        <time datetime="2025-06">2025-06</time>
+        <time datetime="{{ item.date }}">{{ item.date }}</time>
         <h3>
-          <span class="lang-zh">陆伟教授全职加盟深圳医学科学院</span>
-          <span class="lang-en">Prof. Wei Lu joins SMART full-time</span>
+          <span class="lang-zh">{{ item.title_zh }}</span>
+          <span class="lang-en">{{ item.title_en }}</span>
         </h3>
         <p>
-          <span class="lang-zh">陆伟教授自美国国立卫生研究院（NIH/NINDS）全职加盟深圳医学科学院，任资深研究员、神经调控与认知研究所（INC）副所长。</span>
-          <span class="lang-en">Prof. Wei Lu joined SMART full-time from NIH/NINDS, appointed Senior Investigator and Deputy Director of the Institute of Neuromodulation and Cognition (INC).</span>
+          <span class="lang-zh">{{ item.text_zh }}</span>
+          <span class="lang-en">{{ item.text_en }}</span>
         </p>
+{% if item.link_url %}
         <p>
-          <a href="https://smart.org.cn/en/detail/985.html" target="_blank" rel="noopener">
-            <span class="lang-zh">阅读SMART官方报道 →</span>
-            <span class="lang-en">Read the official SMART announcement →</span>
+          <a href="{{ item.link_url }}" target="_blank" rel="noopener">
+            <span class="lang-zh">{{ item.link_zh }}</span>
+            <span class="lang-en">{{ item.link_en }}</span>
           </a>
         </p>
+{% endif %}
       </div>
 
-      <div class="news-item">
-        <time datetime="2025-01">2025-01</time>
-        <h3>
-          <span class="lang-zh">实验室招聘启事发布</span>
-          <span class="lang-en">Lab recruitment announcement</span>
-        </h3>
-        <p>
-          <span class="lang-zh">实验室招聘启事已在深圳医学科学院官网发布，欢迎有志于GABA突触研究的人才加入。</span>
-          <span class="lang-en">The lab's recruitment announcement is now live on the SMART website. Talented researchers interested in GABAergic synapse research are welcome to apply.</span>
-        </p>
-        <p>
-          <a href="https://smart.org.cn/career/research-lab/352.html" target="_blank" rel="noopener">
-            <span class="lang-zh">查看招聘信息 →</span>
-            <span class="lang-en">View the recruitment announcement →</span>
-          </a>
-        </p>
-      </div>
-
-      <div class="news-item">
-        <time datetime="2024-11">2024-11</time>
-        <h3>
-          <span class="lang-zh">Cell 论文发表</span>
-          <span class="lang-en">Cell paper published</span>
-        </h3>
-        <p>
-          <span class="lang-zh">TMEM132B–GABA-A受体复合物调控大脑中的酒精作用。</span>
-          <span class="lang-en">The TMEM132B–GABA-A receptor complex controls alcohol actions in the brain.</span>
-        </p>
-      </div>
-
-      <div class="news-item">
-        <time datetime="2019-10">2019-10</time>
-        <h3>
-          <span class="lang-zh">Science 论文发表并获NIH/NINDS新闻报道</span>
-          <span class="lang-en">Science paper published, covered by NIH/NINDS press release</span>
-        </h3>
-        <p>
-          <span class="lang-zh">发现Shisa7是GABA-A受体辅助亚基，调控苯二氮䓬类药物作用。</span>
-          <span class="lang-en">Discovery of Shisa7 as a GABA-A receptor auxiliary subunit controlling benzodiazepine actions.</span>
-        </p>
-        <p>
-          <a href="https://www.ninds.nih.gov/news-events/news/press-releases/sticky-gene-may-help-valium-calm-nerves" target="_blank" rel="noopener">
-            <span class="lang-zh">阅读NIH/NINDS新闻稿 →</span>
-            <span class="lang-en">Read the NIH/NINDS press release →</span>
-          </a>
-        </p>
-      </div>
-
+{% endfor %}
     </div>
   </section>
 </main>
-
-<!-- ===== Shared footer (keep identical on every page) ===== -->
-<footer class="site-footer">
-  <div class="container">
-    <p>
-      <span class="lang-zh">陆伟实验室（分子认知实验室）· 深圳医学科学院神经调控与认知研究所 · 深圳市光明区卫光生命科学园区</span>
-      <span class="lang-en">Lu Lab (Molecular Cognition Lab) · Institute of Neuromodulation and Cognition, SMART · Weiguang Life Science Park, Guangming District, Shenzhen</span>
-    </p>
-    <p><a href="mailto:luwei@smart.org.cn">luwei@smart.org.cn</a> · <a href="mailto:gaba@smart.org.cn">gaba@smart.org.cn</a> · © 2025–2026 Lu Lab</p>
-  </div>
-</footer>
-
-</body>
-</html>

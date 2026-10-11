@@ -60,4 +60,50 @@
     <circle cx="160" cy="150" r="3.5"/>
     <circle cx="152" cy="158" r="3.5"/>
   </g>
+
+  <!-- ANIMATION LAYER (SMIL; static scene above is unchanged) -->
+  <!-- vesicles drifting down toward the active zone, staggered -->
+  <g fill="#f3efe7">
+    <circle cx="138" cy="86" r="5" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;4 30;6 38" keyTimes="0;0.7;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="166" cy="88" r="5" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;-4 26;-6 34" keyTimes="0;0.7;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="82" r="5" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 32;1 42" keyTimes="0;0.7;1" dur="3s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.75;1" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- receptor pulse, timed just after the dots arrive -->
+  <rect x="100" y="154" width="104" height="56" rx="18" fill="#b8452f" opacity="0">
+    <animate attributeName="opacity" values="0;0.18;0" keyTimes="0;0.4;1" dur="3s" begin="0.9s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- neurotransmitter stream crossing the cleft to the clustered receptors -->
+  <g fill="#b8452f">
+    <circle cx="152" cy="136" r="3" opacity="0">
+      <animate attributeName="cx" values="152;126" dur="2.8s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="136;158" dur="2.8s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.8s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="136" r="3" opacity="0">
+      <animate attributeName="cx" values="152;146" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="136;158" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.8s" begin="0.7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="136" r="3" opacity="0">
+      <animate attributeName="cx" values="152;162" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="136;158" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.8s" begin="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="136" r="3" opacity="0">
+      <animate attributeName="cx" values="152;180" dur="2.8s" begin="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="136;158" dur="2.8s" begin="2.1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.8;1" dur="2.8s" begin="2.1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 </svg>

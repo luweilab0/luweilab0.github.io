@@ -1,42 +1,9 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>联系我们 · Contact — 陆伟实验室 · Lu Lab</title>
-  <meta name="description" content="联系陆伟实验室（分子认知实验室）— 深圳医学科学院。邮箱与地址。">
-  <script>
-    (function () {
-      var lang = localStorage.getItem("lulab-lang") || "zh-CN";
-      document.documentElement.lang = lang;
-    })();
-  </script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="assets/js/main.js" defer></script>
-</head>
-<body>
-
-<!-- ===== Shared header (keep identical on every page; set .active on current page link) ===== -->
-<header class="site-header">
-  <div class="container">
-    <a class="brand" href="index.html">
-      <span class="brand-name"><span class="lang-zh">分子认知实验室</span><span class="lang-en">Molecular Cognition Lab</span></span>
-      <span class="brand-tag"><span class="lang-zh">研究GABA抑制性突触的发育、调控与疾病机制</span><span class="lang-en">Development, modulation, and disease mechanisms of GABAergic inhibitory synapses</span></span>
-    </a>
-    <button class="nav-hamburger" aria-label="Menu">☰</button>
-    <nav class="site-nav">
-      <a href="index.html"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
-      <a href="research.html"><span class="lang-zh">研究</span><span class="lang-en">Research</span></a>
-      <a href="team.html"><span class="lang-zh">团队</span><span class="lang-en">Team</span></a>
-      <a href="publications.html"><span class="lang-zh">论文</span><span class="lang-en">Publications</span></a>
-      <a href="news.html"><span class="lang-zh">新闻</span><span class="lang-en">News</span></a>
-      <a href="recruitment.html"><span class="lang-zh">招聘</span><span class="lang-en">Join Us</span></a>
-      <a href="contact.html" class="active"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></a>
-      <button class="lang-toggle" type="button">EN</button>
-    </nav>
-  </div>
-</header>
-
+---
+layout: default
+title: "联系我们 · Contact — 陆伟实验室 · Lu Lab"
+description: "联系陆伟实验室（分子认知实验室）— 深圳医学科学院。邮箱与地址。"
+nav_id: contact
+---
 <main>
   <!-- ===== Contact info ===== -->
   <section class="section">
@@ -60,17 +27,3 @@
   </section>
 
 </main>
-
-<!-- ===== Shared footer (keep identical on every page) ===== -->
-<footer class="site-footer">
-  <div class="container">
-    <p>
-      <span class="lang-zh">陆伟实验室（分子认知实验室）· 深圳医学科学院神经调控与认知研究所 · 深圳市光明区卫光生命科学园区</span>
-      <span class="lang-en">Lu Lab (Molecular Cognition Lab) · Institute of Neuromodulation and Cognition, SMART · Weiguang Life Science Park, Guangming District, Shenzhen</span>
-    </p>
-    <p><a href="mailto:luwei@smart.org.cn">luwei@smart.org.cn</a> · <a href="mailto:gaba@smart.org.cn">gaba@smart.org.cn</a> · © 2025–2026 Lu Lab</p>
-  </div>
-</footer>
-
-</body>
-</html>

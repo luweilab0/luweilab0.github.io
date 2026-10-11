@@ -1,0 +1,10 @@
+title: "陆伟实验室 · Lu Lab — 分子认知实验室"
+description: "陆伟实验室（分子认知实验室）— 深圳医学科学院神经调控与认知研究所。GABA突触发育与功能调控研究。"
+lang: zh-CN
+
+exclude:
+  - PLAN.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

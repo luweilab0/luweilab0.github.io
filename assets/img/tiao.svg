@@ -151,7 +151,26 @@
     <polygon points="313,228 327,228 320,240"/>
   </g>
 
-  <!-- allosteric modulator (hexagonal small molecule) bound at side site -->
-  <circle cx="244" cy="104" r="27" fill="none" stroke="#d4785f" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 7"/>
-  <polygon points="230,104 237.5,91 251.5,91 259,104 251.5,117 237.5,117" fill="#b8452f"/>
+  <!-- ANIMATION LAYER (SMIL; static scene above is unchanged) -->
+  <!-- faster ion flow while the modulator is bound: extra vermilion ions, visible only during the bound phase -->
+  <g fill="#b8452f" opacity="0">
+    <animate attributeName="opacity" values="0;0;0.85;0.85;0;0" keyTimes="0;0.3;0.38;0.62;0.72;1" dur="4.8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 -7;0 7" dur="0.9s" repeatCount="indefinite"/>
+    <circle cx="320" cy="110" r="3.5"/>
+    <circle cx="320" cy="138" r="3.5"/>
+    <circle cx="320" cy="166" r="3.5"/>
+    <circle cx="320" cy="194" r="3.5"/>
+  </g>
+
+  <!-- allosteric site emphasis ring: pulses while the modulator is bound -->
+  <circle cx="244" cy="104" r="27" fill="none" stroke="#d4785f" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 7">
+    <animate attributeName="opacity" values="0.25;0.25;1;0.45;1;0.45;1;0.25;0.25" keyTimes="0;0.3;0.36;0.44;0.5;0.57;0.63;0.7;1" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- allosteric modulator (hexagonal small molecule): drifts in from upper-left, docks, holds, releases -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;0.05;0.22;0.65;0.78;0.9;1" dur="4.8s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="-170 -60;-170 -60;0 0;0 0;-170 -60;-170 -60" keyTimes="0;0.05;0.35;0.65;0.9;1" dur="4.8s" repeatCount="indefinite"/>
+    <polygon points="230,104 237.5,91 251.5,91 259,104 251.5,117 237.5,117" fill="#b8452f"/>
+  </g>
 </svg>

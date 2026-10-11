@@ -60,4 +60,29 @@
     <circle cx="160" cy="150" r="3.5"/>
     <circle cx="152" cy="158" r="3.5"/>
   </g>
+
+  <!-- ANIMATION LAYER (SMIL; static scene above is unchanged) -->
+  <!-- neurotransmitter dots drifting rightward and dispersing into the extrasynaptic region -->
+  <g fill="#d4785f">
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;300" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;150;166" keyTimes="0;0.4;1" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;370" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;148;160" keyTimes="0;0.4;1" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;440" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;152;168" keyTimes="0;0.4;1" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;515" dur="2.6s" begin="1.95s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;146;158" keyTimes="0;0.4;1" dur="2.6s" begin="1.95s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="1.95s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 </svg>
