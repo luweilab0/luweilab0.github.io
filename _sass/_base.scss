@@ -8,7 +8,7 @@ body {
 }
 
 html {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body {
@@ -29,8 +29,9 @@ h6 {
 }
 
 .post article {
-  // match .team-card-bio text size across page content
-  font-size: 0.95rem;
+  // Lu Lab: original site used 16px body text with 1.75 line height
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 // Typography
@@ -57,7 +58,7 @@ hr {
 table {
   td,
   th {
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 1px 1rem 1px 0;
     color: var(--global-text-color);
   }
@@ -1829,4 +1830,68 @@ ninja-keys::part(ninja-input-wrapper) {
       min-width: 0;
     }
   }
+}
+
+/*******************************************************************************
+ * Lu Lab design restoration — original custom look mapped onto theme hooks
+ * (original: assets/css/style.css @ b1d030b~1)
+ ******************************************************************************/
+
+// Section headings: serif with a short vermilion underline (original .section h2)
+.post article h2:not(.bibliography) {
+  font-family: var(--lulab-serif);
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-top: 40px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid var(--lulab-accent);
+}
+
+// hairline separator above each section heading (original .section + .section)
+.post article > *:has(+ h2:not(.bibliography)) {
+  border-bottom: 1px solid var(--lulab-line);
+  padding-bottom: 24px;
+}
+
+// Bibliography year headings: serif + short vermilion underline,
+// keeping the theme's full-width hairline above each year group
+.publications h2.bibliography {
+  font-family: var(--lulab-serif);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 2.2em;
+    margin-top: 8px;
+    border-bottom: 2px solid var(--lulab-accent);
+  }
+}
+
+// Publications: journal names in italic vermilion, years/details muted
+// (original .pub-list .journal / .year)
+.publications .periodical {
+  color: var(--global-text-color-light);
+
+  em {
+    color: var(--lulab-accent);
+    font-style: italic;
+  }
+}
+
+// News: muted dates (links pick up the vermilion theme color)
+.news table th {
+  color: var(--global-text-color-light);
+  font-weight: 400;
+}
+
+// Team: role lines in vermilion (original .card .role)
+.team-card .team-card-info .team-card-title {
+  color: var(--lulab-accent);
+}
+
+// Lead paragraphs (original .lead)
+.lead {
+  font-size: 1.08rem;
+  color: var(--global-text-color-light);
+  max-width: 760px;
 }

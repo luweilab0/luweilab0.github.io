@@ -12,6 +12,7 @@ description:
 ## Lab Philosophy
 
 We believe in free, open, and collaborative research, where projects arise from broad and deep discussion. We study GABAergic synapses using techniques ranging from molecular biology to in vivo imaging and optogenetics.
+{: .lead}
 
 ## Open Positions
 

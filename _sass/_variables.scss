@@ -32,6 +32,10 @@ $grey-900: #212529;
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
+// Lu Lab brand accent (muted vermilion)
+$lulab-accent: #a03b2a !default;
+$lulab-accent-light: color.adjust($lulab-accent, $lightness: 15%);
+
 // Theme colors
 
 $code-bg-color-light: rgba($purple-color, 0.05);
