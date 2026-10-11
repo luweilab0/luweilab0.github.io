@@ -1939,10 +1939,19 @@ ninja-keys::part(ninja-input-wrapper) {
 
   > .container {
     background-color: #1b2a41;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
   }
 
   .navbar-brand.lab-brand {
     color: #ffffff;
+
+    .brand-name {
+      font-size: 1.45rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #ffffff;
+    }
 
     .brand-tag {
       color: #c8d0dc;
@@ -1996,7 +2005,7 @@ ninja-keys::part(ninja-input-wrapper) {
 
 // two-line brand navbar: keep the fixed-nav body offset in sync
 body.fixed-top-nav {
-  padding-top: 74px;
+  padding-top: 92px;
 }
 
 body h1,
@@ -2005,7 +2014,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  scroll-margin-top: 82px;
+  scroll-margin-top: 100px;
 }
 
 // mobile dropdown panel stays light with dark text for readability
