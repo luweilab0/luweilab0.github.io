@@ -29,15 +29,17 @@ _styles: |
 <div class="page-section">
   <h2>团队成员</h2>
   <p class="team-card-bio">我们的团队由博士后、研究生和研究助理组成。</p>
-  {% for member in site.data.team %}
-  <div class="team-card card p-3">
-    <div class="team-card-photo-blank"></div>
-    <div class="team-card-info">
-      <p class="team-card-name">{{ member.label_zh }}</p>
-      <p class="team-card-bio">{{ member.text_zh }}</p>
+  <div class="team-members-grid">
+    {% for member in site.data.team %}
+    <div class="team-card team-card-member card p-3">
+      <div class="team-card-photo-blank"></div>
+      <div class="team-card-info">
+        <p class="team-card-name">{{ member.label_zh }}</p>
+        <p class="team-card-bio">{{ member.text_zh }}</p>
+      </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
 <div class="page-section">

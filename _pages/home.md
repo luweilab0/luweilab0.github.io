@@ -1,16 +1,15 @@
 ---
-layout: about
+layout: home
 title: Home
 permalink: /
 lang: en
 lang_ref: home
 nav: true
 nav_order: 1
-subtitle: Molecular Cognition Lab — development, modulation, and disease mechanisms of GABAergic inhibitory synapses.
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 <!-- ===== 聚 散 转 调 — 2x2 matrix ===== -->

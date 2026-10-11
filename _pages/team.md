@@ -29,15 +29,17 @@ _styles: |
 <div class="page-section">
   <h2>Team Members</h2>
   <p class="team-card-bio">Our team consists of postdoctoral fellows, graduate students, and research assistants.</p>
-  {% for member in site.data.team %}
-  <div class="team-card card p-3">
-    <div class="team-card-photo-blank"></div>
-    <div class="team-card-info">
-      <p class="team-card-name">{{ member.label_en }}</p>
-      <p class="team-card-bio">{{ member.text_en }}</p>
+  <div class="team-members-grid">
+    {% for member in site.data.team %}
+    <div class="team-card team-card-member card p-3">
+      <div class="team-card-photo-blank"></div>
+      <div class="team-card-info">
+        <p class="team-card-name">{{ member.label_en }}</p>
+        <p class="team-card-bio">{{ member.text_en }}</p>
+      </div>
     </div>
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
 <div class="page-section">

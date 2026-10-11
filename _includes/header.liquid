@@ -18,6 +18,13 @@
         {% endif %}
       {% endif %}
 
+      <!-- Lab name brand: plain text, language-aware -->
+      {% if cur_lang == 'zh' %}
+        <a class="navbar-brand lab-brand" href="{{ '/home-zh/' | relative_url }}">分子认知实验室</a>
+      {% else %}
+        <a class="navbar-brand lab-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      {% endif %}
+
       {% assign other_lang = 'zh' %}
       {% if cur_lang == 'zh' %}
         {% assign other_lang = 'en' %}

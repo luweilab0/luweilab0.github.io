@@ -549,6 +549,11 @@ ul.task-list input[type="checkbox"] {
     }
   }
 
+  .navbar-brand.lab-brand {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
   .mobile-nav-controls {
     display: flex;
     align-items: center;
@@ -1796,5 +1801,32 @@ ninja-keys::part(ninja-input-wrapper) {
   &::before {
     content: "✎ ";
     color: var(--lulab-accent);
+  }
+}
+
+// Team member cards — 4 per row on desktop, stacking on smaller screens
+.team-members-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .team-card-member {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
+    margin-bottom: 0;
+
+    .team-card-info {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
   }
 }

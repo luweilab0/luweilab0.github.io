@@ -1,16 +1,15 @@
 ---
-layout: about2
+layout: home
 title: 首页
 permalink: /home-zh/
 lang: zh
 lang_ref: home
 nav: true
 nav_order: 1
-subtitle: 分子认知实验室 — GABA能抑制性突触的发育、调控与疾病机制。
 
-news: true # includes a list of news items
+news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 <!-- ===== 聚 散 转 调 — 2x2 matrix ===== -->
