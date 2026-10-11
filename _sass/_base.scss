@@ -1707,9 +1707,9 @@ ninja-keys::part(ninja-input-wrapper) {
   --lulab-serif: "Noto Serif SC", "Songti SC", "SimSun", serif;
 }
 
-// 2x2 matrix on the front page
+// 2x2 matrix on the front page — sized so navbar + full matrix fit a ~720px-tall viewport
 .matrix {
-  padding: 12px 0;
+  padding: 0;
 }
 
 .matrix-grid {
@@ -1731,7 +1731,7 @@ ninja-keys::part(ninja-input-wrapper) {
   text-decoration: none;
   color: var(--global-text-color);
   background: var(--global-bg-color);
-  padding: 18px 22px;
+  padding: 12px 20px;
 
   &:hover {
     background: var(--lulab-wash);
@@ -1742,12 +1742,12 @@ ninja-keys::part(ninja-input-wrapper) {
 .quad-head {
   display: flex;
   align-items: baseline;
-  gap: 14px;
+  gap: 12px;
 }
 
 .quad-char {
   font-family: var(--lulab-serif);
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--lulab-accent);
   line-height: 1;
@@ -1760,25 +1760,25 @@ ninja-keys::part(ninja-input-wrapper) {
 }
 
 .quad-title {
-  margin-top: 6px;
+  margin-top: 2px;
   font-size: 1.05rem;
   font-weight: 600;
 }
 
 .quad-desc {
-  margin-top: 6px;
+  margin-top: 4px;
   color: var(--global-text-color-light);
   font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .quad-img {
   display: block;
-  max-width: 340px;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 2 / 1;
+  height: 100px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
-  margin: 10px auto 0;
+  margin: 6px auto 0;
   border: 1px solid var(--lulab-line);
 }
 
