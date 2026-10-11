@@ -12,3 +12,5 @@ description:
 - **陆伟 教授（课题组长）：** [luwei@smart.org.cn](mailto:luwei@smart.org.cn)
 - **招聘咨询：** [gaba@smart.org.cn](mailto:gaba@smart.org.cn)
 - **地址：** 深圳市光明区卫光生命科学园区，深圳医学科学院（SMART）
+
+{% include figure.liquid loading="eager" path="assets/img/smart-campus.jpg" class="img-fluid z-depth-1 rounded" alt="深圳医学科学院园区" caption="深圳医学科学院（光明区卫光生命科学园区）" %}

@@ -4,14 +4,6 @@
     <div class="container">
       {% assign cur_lang = page.lang | default: 'en' %}
       {% if page.lang_ref == 'home' %}
-        <!-- SMART logo -->
-        <a class="navbar-brand smart-logo" href="https://smart.org.cn" target="_blank" rel="noopener noreferrer">
-          {% if cur_lang == 'zh' %}
-            <img src="{{ '/assets/img/smart-logo-zh.png' | relative_url }}" alt="SMART" />
-          {% else %}
-            <img src="{{ '/assets/img/smart-logo-en.png' | relative_url }}" alt="SMART" />
-          {% endif %}
-        </a>
         {% if site.enable_navbar_social %}
           <!-- Social Icons -->
           <div class="navbar-brand social">{% include social.liquid %}</div>
