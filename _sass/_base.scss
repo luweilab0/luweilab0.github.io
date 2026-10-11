@@ -1928,7 +1928,7 @@ ninja-keys::part(ninja-input-wrapper) {
     font-weight: 400;
     letter-spacing: 0;
     color: var(--global-text-color-light);
-    max-width: 290px;
+    max-width: 250px; // trimmed so brand + fixed tabs + toggle fit the 930px container
     white-space: normal;
     line-height: 1.35;
   }
@@ -2044,25 +2044,10 @@ body h6 {
   }
 }
 
-// Fixed equal-width nav tab slots: tabs land at identical x positions in en/zh
-// (widest label "Publications" @0.9rem ≈ 92px incl. trimmed padding)
-@media (min-width: 576px) {
-  #navbar .navbar-nav .nav-item:not(.lang-toggle-item) {
-    min-width: 92px;
-    text-align: center;
-
-    .nav-link {
-      padding-left: 0.25rem;
-      padding-right: 0.25rem;
-    }
-  }
-
-  #navbar .navbar-brand.lab-brand .brand-name {
-    white-space: nowrap; // never wrap the lab name when space is tight
-  }
-}
-
-// Navbar width budget: brand (~207px zh @1.85rem) + 7 tab slots + toggle must fit 930px
+// Fixed equal-width nav tab slots: tabs land at identical x positions in en/zh.
+// Compact slots: "Publications" @0.9rem measures ~81px, so 82px with zero link
+// padding holds it without growing.
+// Width budget @930px container: brand ≤250 + 7×82 + toggle ~62 = ~886px < ~910px usable.
 @media (min-width: 576px) {
   #navbar.navbar > .container {
     padding-left: 10px;
@@ -2070,11 +2055,21 @@ body h6 {
   }
 
   #navbar .navbar-nav .nav-item:not(.lang-toggle-item) {
-    min-width: 90px;
+    min-width: 82px;
+    text-align: center;
+
+    .nav-link {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   #navbar .navbar-nav .nav-item.lang-toggle-item {
     margin-left: 0.25rem;
     padding-left: 0.6rem;
+  }
+
+  #navbar .navbar-brand.lab-brand .brand-name {
+    white-space: nowrap; // never wrap the lab name when space is tight
   }
 }
