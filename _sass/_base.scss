@@ -1931,20 +1931,18 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
-// Deep navy navbar band on all pages — floating bar constrained to content width
+// Deep navy navbar band on all pages — flush bar constrained to content width
 #navbar.navbar {
   background-color: transparent;
   border-bottom: none;
   opacity: 1;
-  margin-top: 10px;
 
   > .container {
     background-color: #1b2a41;
-    border-radius: 8px;
   }
 
   .navbar-brand.lab-brand {
-    color: #d4654f;
+    color: #ffffff;
 
     .brand-tag {
       color: #c8d0dc;
@@ -1996,9 +1994,9 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
-// taller two-line brand navbar + 10px band top margin: keep the fixed-nav body offset in sync
+// two-line brand navbar: keep the fixed-nav body offset in sync
 body.fixed-top-nav {
-  padding-top: 84px;
+  padding-top: 74px;
 }
 
 body h1,
@@ -2007,7 +2005,7 @@ body h3,
 body h4,
 body h5,
 body h6 {
-  scroll-margin-top: 92px;
+  scroll-margin-top: 82px;
 }
 
 // mobile dropdown panel stays light with dark text for readability
