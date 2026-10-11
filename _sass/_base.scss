@@ -374,7 +374,7 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
   box-sizing: border-box;
   padding: 1.25rem 1.5rem;
-  border-left: 3px solid $blue-color;
+  border-left: 3px solid $lulab-accent;
   background-color: var(--global-card-bg-color);
   border-radius: 0 8px 8px 0;
 
@@ -387,7 +387,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   a {
-    color: $blue-color;
+    color: $lulab-accent;
     text-decoration: underline;
 
     &:hover {
@@ -870,7 +870,7 @@ footer.sticky-bottom {
 .post-header {
   .lab-name {
     letter-spacing: 0.08em;
-    color: $blue-color;
+    color: $lulab-accent;
   }
 
   .post-title {
@@ -880,7 +880,7 @@ footer.sticky-bottom {
       width: 64px;
       height: 3px;
       margin-top: 0.9rem;
-      background-color: $blue-color;
+      background-color: $lulab-accent;
       border-radius: 2px;
     }
   }
@@ -904,7 +904,7 @@ footer.sticky-bottom {
   margin-bottom: 0.9rem;
 
   i {
-    color: $blue-color;
+    color: $lulab-accent;
     font-size: 1.05rem;
     margin-right: 0.4rem;
     vertical-align: -1px;
@@ -1894,4 +1894,23 @@ ninja-keys::part(ninja-input-wrapper) {
   font-size: 1.08rem;
   color: var(--global-text-color-light);
   max-width: 760px;
+}
+
+// Publications: single flowing paragraph per entry (authors. (year). Title. Journal vol(num), pages.)
+.publications ol.bibliography li {
+  .pub-entry {
+    margin-bottom: 0.2rem;
+  }
+
+  .pub-year {
+    color: var(--global-text-color-light);
+  }
+
+  .title {
+    font-weight: 400;
+  }
+
+  .links:empty {
+    display: none;
+  }
 }

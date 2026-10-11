@@ -46,42 +46,9 @@
 
   <!-- Entry bib key -->
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
-    <!-- Title -->
-    <div class="title">
-      {% if entry.doi %}
-        <a
-          href="https://doi.org/{{ entry.doi }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="color: #5bc0de; text-decoration: underline;"
-        >{{ entry.title }}</a>
-      {% else %}
-        {{ entry.title }}
-      {% endif %}
-      {% if entry.pdf %}
-        {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[PDF]</a>
-        {% else %}
-          <a
-            href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="pdf-inline-link"
-          >[PDF]</a>
-        {% endif %}
-      {% endif %}
-      {% if entry.code %}
-        <a href="{{ entry.code }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[Code]</a>
-      {% endif %}
-      {% if entry.data %}
-        <a href="{{ entry.data }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[Data]</a>
-      {% endif %}
-      {% if entry.website %}
-        <a href="{{ entry.website }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[Website]</a>
-      {% endif %}
-    </div>
+    <p class="pub-entry">
     <!-- Author -->
-    <div class="author">
+    <span class="author">
       {%- assign authors = entry.author_array -%}
       {%- assign total = authors | size -%}
       {%- assign has_others = false -%}
@@ -157,25 +124,56 @@
         >
         </i>
       {% endif %}
-    </div>
+    </span>
+    {%- if entry.year %}
+      <span class="pub-year">({{ entry.year }})</span>.
+    {%- endif %}
+    <!-- Title -->
+    <span class="title">
+      {% if entry.doi %}
+        <a
+          href="https://doi.org/{{ entry.doi }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #5bc0de; text-decoration: underline;"
+        >{{ entry.title }}</a>
+      {% else %}
+        {{ entry.title }}
+      {% endif %}
+      {% if entry.pdf %}
+        {% if entry.pdf contains '://' %}
+          <a href="{{ entry.pdf }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[PDF]</a>
+        {% else %}
+          <a
+            href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="pdf-inline-link"
+          >[PDF]</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.code %}
+        <a href="{{ entry.code }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[Code]</a>
+      {% endif %}
+      {% if entry.data %}
+        <a href="{{ entry.data }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[Data]</a>
+      {% endif %}
+      {% if entry.website %}
+        <a href="{{ entry.website }}" target="_blank" rel="noopener noreferrer" class="pdf-inline-link">[Website]</a>
+      {% endif %}
+    </span>.
 
-    <!-- Journal/Book title and date -->
+    <!-- Journal/Book title -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
+      {% capture entrytype %}<em>{{ entry.journal }}</em>{% if entry.volume %} {{ entry.volume }}{% if entry.number %}({{ entry.number }}){% endif %}{% endif %}{% if entry.pages %}, {{ entry.pages | replace: "--", "-" }}{% endif %}{% endcapture %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
-    {% endif %}
-    {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
-    {% endif %}
-    {% if entry.year %}
-      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
@@ -188,13 +186,13 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    <div class="periodical">
-      {{ periodical | strip }}
-    </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% if entrytype_text != "" %}
+      <span class="periodical">{{ entrytype | strip }}.</span>
+    {% endif %}
+    {% if entry.note %}
+      <span class="periodical pub-note">{{ entry.note | strip }}</span>
+    {% endif %}
+    </p>
 
     <!-- Links/Buttons -->
     <div class="links">

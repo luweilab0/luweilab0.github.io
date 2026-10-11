@@ -19,7 +19,6 @@ social: false # includes social icons at the bottom of the page
     <a class="quadrant" href="{{ '/research/#assemble' | relative_url }}">
       <div class="quad-head">
         <span class="quad-char">聚</span>
-        <span class="quad-pinyin">jù · assemble</span>
       </div>
       <div class="quad-title">Synapse Assembly</div>
       <p class="quad-desc">How GABA-A receptors and auxiliary subunits such as Shisa7 and TMEM132B cluster and assemble into functional inhibitory synapses.</p>
@@ -29,7 +28,6 @@ social: false # includes social icons at the bottom of the page
     <a class="quadrant" href="{{ '/research/#disperse' | relative_url }}">
       <div class="quad-head">
         <span class="quad-char">散</span>
-        <span class="quad-pinyin">sàn · disperse</span>
       </div>
       <div class="quad-title">Extrasynaptic Signaling &amp; Tonic Inhibition</div>
       <p class="quad-desc">Receptors dispersed across the extrasynaptic membrane mediate persistent "tonic" inhibition — the brain's background brake — dynamically tuned by receptor diffusion and trafficking.</p>
@@ -39,7 +37,6 @@ social: false # includes social icons at the bottom of the page
     <a class="quadrant" href="{{ '/research/#transform' | relative_url }}">
       <div class="quad-head">
         <span class="quad-char">转</span>
-        <span class="quad-pinyin">zhuǎn · transform</span>
       </div>
       <div class="quad-title">State Transitions</div>
       <p class="quad-desc">How sleep and wakefulness dynamically regulate inhibitory synaptic plasticity; the molecular and circuit mechanisms of anesthesia and consciousness.</p>
@@ -49,7 +46,6 @@ social: false # includes social icons at the bottom of the page
     <a class="quadrant" href="{{ '/research/#modulate' | relative_url }}">
       <div class="quad-head">
         <span class="quad-char">调</span>
-        <span class="quad-pinyin">tiáo · modulate</span>
       </div>
       <div class="quad-title">Allosteric Modulation</div>
       <p class="quad-desc">How benzodiazepines, alcohol, and anesthetics allosterically modulate GABA-A receptors — targets for next-generation therapeutics for brain disorders.</p>
