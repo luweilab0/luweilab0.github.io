@@ -1933,7 +1933,7 @@ ninja-keys::part(ninja-input-wrapper) {
 
 // Deep navy navbar band on all pages — flush bar constrained to content width
 #navbar.navbar {
-  background-color: transparent;
+  background-color: var(--global-bg-color);  // opaque page color: scrolling content never shows through
   border-bottom: none;
   opacity: 1;
 
