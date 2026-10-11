@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <!-- background -->
+  <rect x="0" y="0" width="640" height="320" rx="16" fill="#fafafa"/>
+
+  <!-- HIGHLIGHT (san only): faint wide red wash behind the extrasynaptic region -->
+  <rect x="240" y="142" width="340" height="100" rx="30" fill="#c0392b" opacity="0.10"/>
+  <rect x="256" y="154" width="308" height="76" rx="24" fill="#c0392b" opacity="0.10"/>
+
+  <!-- membrane bilayer band (geometry identical in ju.svg and san.svg) -->
+  <rect x="48" y="178" width="544" height="24" fill="#b0b0b0"/>
+  <g fill="none" stroke="#6b6b6b" stroke-width="4" stroke-linecap="round">
+    <path d="M 48 178 H 592"/>
+    <path d="M 48 202 H 592"/>
+  </g>
+
+  <!-- synaptic receptor cluster, left third (geometry identical in both files) -->
+  <g fill="#6b6b6b" opacity="0.35">
+    <rect x="103" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="107" y="167" width="10" height="36" rx="4"/>
+    <rect x="123" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="127" y="167" width="10" height="36" rx="4"/>
+    <rect x="143" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="147" y="167" width="10" height="36" rx="4"/>
+    <rect x="163" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="167" y="167" width="10" height="36" rx="4"/>
+    <rect x="183" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="187" y="167" width="10" height="36" rx="4"/>
+  </g>
+
+  <!-- postsynaptic density below the cluster -->
+  <rect x="102" y="210" width="100" height="6" rx="3" fill="#2e2e2e" opacity="0.5"/>
+
+  <!-- extrasynaptic receptors, right two-thirds, sparse and even (geometry identical in both files) -->
+  <g fill="#c0392b">
+    <rect x="263" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="267" y="167" width="10" height="36" rx="4"/>
+    <rect x="331" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="335" y="167" width="10" height="36" rx="4"/>
+    <rect x="399" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="403" y="167" width="10" height="36" rx="4"/>
+    <rect x="467" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="471" y="167" width="10" height="36" rx="4"/>
+    <rect x="535" y="160" width="18" height="9" rx="4.5"/>
+    <rect x="539" y="167" width="10" height="36" rx="4"/>
+  </g>
+
+  <!-- presynaptic bouton above the membrane (geometry identical in both files) -->
+  <path d="M 152 44 L 152 76" stroke="#2e2e2e" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="152" cy="106" r="30" fill="#2e2e2e"/>
+  <g fill="#e8e8e8">
+    <circle cx="140" cy="100" r="5"/>
+    <circle cx="164" cy="100" r="5"/>
+    <circle cx="152" cy="116" r="5"/>
+  </g>
+
+  <!-- released transmitter in the cleft -->
+  <g fill="#c0392b">
+    <circle cx="144" cy="148" r="3.5"/>
+    <circle cx="160" cy="150" r="3.5"/>
+    <circle cx="152" cy="158" r="3.5"/>
+  </g>
+
+  <!-- ANIMATION LAYER (SMIL; static scene above is unchanged) -->
+  <!-- neurotransmitter dots drifting rightward and dispersing into the extrasynaptic region -->
+  <g fill="#c0392b">
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;300" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;150;166" keyTimes="0;0.4;1" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;370" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;148;160" keyTimes="0;0.4;1" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="0.65s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;440" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;152;168" keyTimes="0;0.4;1" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="152" cy="138" r="3" opacity="0">
+      <animate attributeName="cx" values="152;515" dur="2.6s" begin="1.95s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="138;146;158" keyTimes="0;0.4;1" dur="2.6s" begin="1.95s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.7;1" dur="2.6s" begin="1.95s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
