@@ -1739,28 +1739,13 @@ ninja-keys::part(ninja-input-wrapper) {
   }
 }
 
-// Quadrant body: big character (zh) / word (en) on the left, description on the right
-.quad-body {
+.quad-head {
   display: flex;
-  align-items: flex-start;
-  gap: 18px;
+  align-items: baseline;
+  gap: 12px;
 }
 
-.quad-left {
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (max-width: 576px) {
-  .quad-body {
-    flex-direction: column;
-    gap: 6px;
-  }
-}
-
-.quad-char,
-.quad-word {
+.quad-char {
   font-family: var(--lulab-serif);
   font-size: 2rem;
   font-weight: 700;
@@ -1768,17 +1753,20 @@ ninja-keys::part(ninja-input-wrapper) {
   line-height: 1;
 }
 
+.quad-pinyin {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  letter-spacing: 0.06em;
+}
+
 .quad-title {
-  margin-top: 6px;
-  font-size: 0.95rem;
+  margin-top: 2px;
+  font-size: 1.05rem;
   font-weight: 600;
-  line-height: 1.35;
 }
 
 .quad-desc {
-  flex: 1;
-  min-width: 0;
-  margin: 0;
+  margin-top: 4px;
   color: var(--global-text-color-light);
   font-size: 0.92rem;
   line-height: 1.5;
@@ -1786,10 +1774,11 @@ ninja-keys::part(ninja-input-wrapper) {
 
 .quad-img {
   display: block;
-  width: 100%;
-  height: 150px;
+  height: 100px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
-  margin: 10px auto 0;
+  margin: 6px auto 0;
   border: 1px solid var(--lulab-line);
 }
 
