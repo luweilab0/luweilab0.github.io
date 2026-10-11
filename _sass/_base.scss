@@ -1914,3 +1914,24 @@ ninja-keys::part(ninja-input-wrapper) {
     display: none;
   }
 }
+
+// Navbar brand with tagline (original .brand / .brand-tag look)
+.navbar .navbar-brand.lab-brand {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  min-width: 0;
+  line-height: 1.25;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+
+  .brand-tag {
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--global-text-color-light);
+    max-width: 290px;
+    white-space: normal;
+    line-height: 1.35;
+  }
+}
