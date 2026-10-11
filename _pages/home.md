@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-permalink: /
+permalink: /home-en/
 lang: en
 lang_ref: home
 nav: true

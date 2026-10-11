@@ -1,7 +1,7 @@
 ---
 layout: home
 title: 首页
-permalink: /home-zh/
+permalink: /
 lang: zh
 lang_ref: home
 nav: true
