@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>陆伟实验室 · Lu Lab — 分子认知实验室</title>
+  <meta name="description" content="陆伟实验室（分子认知实验室）— 深圳医学科学院神经调控与认知研究所。GABA突触发育与功能调控研究。">
+  <script>
+    (function () {
+      var lang = localStorage.getItem("lulab-lang") || "zh-CN";
+      document.documentElement.lang = lang;
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<!-- ===== Shared header (keep identical on every page; set .active on current page link) ===== -->
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-name"><span class="lang-zh">分子认知实验室</span><span class="lang-en">Molecular Cognition Lab</span></span>
+      <span class="brand-tag"><span class="lang-zh">研究GABA抑制性突触的发育、调控与疾病机制</span><span class="lang-en">Development, modulation, and disease mechanisms of GABAergic inhibitory synapses</span></span>
+    </a>
+    <button class="nav-hamburger" aria-label="Menu">☰</button>
+    <nav class="site-nav">
+      <a href="index.html" class="active"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a>
+      <a href="research.html"><span class="lang-zh">研究</span><span class="lang-en">Research</span></a>
+      <a href="team.html"><span class="lang-zh">团队</span><span class="lang-en">Team</span></a>
+      <a href="publications.html"><span class="lang-zh">论文</span><span class="lang-en">Publications</span></a>
+      <a href="news.html"><span class="lang-zh">新闻</span><span class="lang-en">News</span></a>
+      <a href="recruitment.html"><span class="lang-zh">招聘</span><span class="lang-en">Join Us</span></a>
+      <a href="contact.html"><span class="lang-zh">联系</span><span class="lang-en">Contact</span></a>
+      <button class="lang-toggle" type="button">EN</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ===== 聚 散 转 调 — 2x2 matrix ===== -->
+  <section class="matrix">
+    <div class="container">
+      <div class="matrix-grid">
+
+        <a class="quadrant" href="research.html#assemble">
+          <div class="quad-head">
+            <span class="quad-char">聚</span>
+            <span class="quad-pinyin">jù · assemble</span>
+          </div>
+          <div class="quad-title">
+            <span class="lang-zh">突触组装</span>
+            <span class="lang-en">Synapse Assembly</span>
+          </div>
+          <p class="quad-desc">
+            <span class="lang-zh">GABA-A受体与Shisa7、TMEM132B等辅助亚基如何聚集、组装成功能性抑制性突触。</span>
+            <span class="lang-en">How GABA-A receptors and auxiliary subunits such as Shisa7 and TMEM132B cluster and assemble into functional inhibitory synapses.</span>
+          </p>
+          <img class="quad-img" src="assets/img/ju.svg" alt="聚 — synapse assembly illustration">
+          <span class="quad-more"><span class="lang-zh">了解研究 →</span><span class="lang-en">Our research →</span></span>
+        </a>
+
+        <a class="quadrant" href="research.html#disperse">
+          <div class="quad-head">
+            <span class="quad-char">散</span>
+            <span class="quad-pinyin">sàn · disperse</span>
+          </div>
+          <div class="quad-title">
+            <span class="lang-zh">突触外信号与张力性抑制</span>
+            <span class="lang-en">Extrasynaptic Signaling &amp; Tonic Inhibition</span>
+          </div>
+          <p class="quad-desc">
+            <span class="lang-zh">弥散于突触外膜的受体介导持续的“张力性抑制”——大脑的背景刹车；受体的扩散与转运动态调节这一过程。</span>
+            <span class="lang-en">Receptors dispersed across the extrasynaptic membrane mediate persistent "tonic" inhibition — the brain's background brake — dynamically tuned by receptor diffusion and trafficking.</span>
+          </p>
+          <img class="quad-img" src="assets/img/san.svg" alt="散 — extrasynaptic tonic inhibition illustration">
+          <span class="quad-more"><span class="lang-zh">了解研究 →</span><span class="lang-en">Our research →</span></span>
+        </a>
+
+        <a class="quadrant" href="research.html#transform">
+          <div class="quad-head">
+            <span class="quad-char">转</span>
+            <span class="quad-pinyin">zhuǎn · transform</span>
+          </div>
+          <div class="quad-title">
+            <span class="lang-zh">状态转换</span>
+            <span class="lang-en">State Transitions</span>
+          </div>
+          <p class="quad-desc">
+            <span class="lang-zh">睡眠与觉醒如何动态调控抑制性突触可塑性；麻醉与意识转换的分子与神经环路机制。</span>
+            <span class="lang-en">How sleep and wakefulness dynamically regulate inhibitory synaptic plasticity; the molecular and circuit mechanisms of anesthesia and consciousness.</span>
+          </p>
+          <img class="quad-img" src="assets/img/zhuan.svg" alt="转 — brain state transition illustration">
+          <span class="quad-more"><span class="lang-zh">了解研究 →</span><span class="lang-en">Our research →</span></span>
+        </a>
+
+        <a class="quadrant" href="research.html#modulate">
+          <div class="quad-head">
+            <span class="quad-char">调</span>
+            <span class="quad-pinyin">tiáo · modulate</span>
+          </div>
+          <div class="quad-title">
+            <span class="lang-zh">变构调节</span>
+            <span class="lang-en">Allosteric Modulation</span>
+          </div>
+          <p class="quad-desc">
+            <span class="lang-zh">苯二氮䓬类药物、酒精与麻醉剂如何变构调节GABA-A受体——下一代神经系统疾病药物的靶点。</span>
+            <span class="lang-en">How benzodiazepines, alcohol, and anesthetics allosterically modulate GABA-A receptors — targets for next-generation therapeutics for brain disorders.</span>
+          </p>
+          <img class="quad-img" src="assets/img/tiao.svg" alt="调 — allosteric modulation illustration">
+          <span class="quad-more"><span class="lang-zh">了解研究 →</span><span class="lang-en">Our research →</span></span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Shared footer (keep identical on every page) ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <p>
+      <span class="lang-zh">陆伟实验室（分子认知实验室）· 深圳医学科学院神经调控与认知研究所 · 深圳市光明区卫光生命科学园区</span>
+      <span class="lang-en">Lu Lab (Molecular Cognition Lab) · Institute of Neuromodulation and Cognition, SMART · Weiguang Life Science Park, Guangming District, Shenzhen</span>
+    </p>
+    <p><a href="mailto:luwei@smart.org.cn">luwei@smart.org.cn</a> · <a href="mailto:gaba@smart.org.cn">gaba@smart.org.cn</a> · © 2025–2026 Lu Lab</p>
+  </div>
+</footer>
+
+</body>
+</html>

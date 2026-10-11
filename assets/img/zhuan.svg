@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320">
+  <!-- background -->
+  <rect x="0" y="0" width="640" height="320" rx="16" fill="#f3efe7"/>
+
+  <!-- brain outline spanning both halves -->
+  <ellipse cx="320" cy="160" rx="272" ry="126" fill="none" stroke="#3c4d68" stroke-width="2.5" opacity="0.22"/>
+  <path d="M 320 36 C 334 100, 306 220, 320 284" fill="none" stroke="#3c4d68" stroke-width="2.5" opacity="0.22" stroke-linecap="round"/>
+
+  <!-- EEG baselines -->
+  <line x1="45" y1="215" x2="285" y2="215" stroke="#ddd5c8" stroke-width="1.5"/>
+  <line x1="355" y1="215" x2="595" y2="215" stroke="#ddd5c8" stroke-width="1.5"/>
+
+  <!-- wake EEG: fast, low amplitude -->
+  <polyline points="50,215 60,206 70,221 80,208 90,224 100,204 110,219 120,209 130,223 140,205 150,220 160,207 170,222 180,206 190,221 200,209 210,224 220,205 230,218 240,210 250,222 260,206 270,216 280,215"
+    fill="none" stroke="#b8452f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- sleep EEG: slow, high amplitude -->
+  <polyline points="360,215 374.4,179.6 388.8,165 403.1,179.6 417.5,215 431.9,250.4 446.3,265 460.6,250.4 475,215 489.4,179.6 503.8,165 518.1,179.6 532.5,215 546.9,250.4 561.3,265 575.6,250.4 590,215"
+    fill="none" stroke="#b8452f" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- sun (wakefulness) -->
+  <g stroke="#16233a" stroke-width="4" stroke-linecap="round" fill="none">
+    <circle cx="120" cy="95" r="20"/>
+    <line x1="147" y1="95" x2="159" y2="95"/>
+    <line x1="93" y1="95" x2="81" y2="95"/>
+    <line x1="120" y1="68" x2="120" y2="56"/>
+    <line x1="120" y1="122" x2="120" y2="134"/>
+    <line x1="139.1" y1="75.9" x2="147.6" y2="67.4"/>
+    <line x1="100.9" y1="114.1" x2="92.4" y2="122.6"/>
+    <line x1="139.1" y1="114.1" x2="147.6" y2="122.6"/>
+    <line x1="100.9" y1="75.9" x2="92.4" y2="67.4"/>
+  </g>
+
+  <!-- crescent moon (sleep / anesthesia) -->
+  <circle cx="520" cy="95" r="22" fill="#16233a"/>
+  <circle cx="530" cy="88" r="19" fill="#f3efe7"/>
+
+  <!-- curved double-headed transition arrow -->
+  <path d="M 245 118 Q 320 62 395 118" fill="none" stroke="#16233a" stroke-width="4" stroke-linecap="round"/>
+  <polyline points="249.4,104.7 245,118 259,117.5" fill="none" stroke="#16233a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="390.6,104.7 395,118 381,117.5" fill="none" stroke="#16233a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
