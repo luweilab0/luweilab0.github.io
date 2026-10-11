@@ -69,3 +69,5 @@ Add a team member (placeholder cards go in `_data/team.yml`; for a full member c
   When editing `.md` pages, only change the content below the `---` front matter block; do not delete the front matter.
 - 论文按年份自动从新到旧分组显示，无需手动修改。/ Papers are grouped by year automatically, newest first.
 - 首页聚散转调四象限的插图在 `assets/img/`（`ju.svg`、`san.svg`、`zhuan.svg`、`tiao.svg`）。/ The four quadrant illustrations on the front page live in `assets/img/`.
+
+<!-- Last deployed via GitHub Actions -->
