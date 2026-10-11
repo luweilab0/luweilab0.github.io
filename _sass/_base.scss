@@ -2064,6 +2064,11 @@ body h6 {
     }
   }
 
+  // Chinese labels are 2 chars — narrower slots so zh spacing matches the en look
+  html[lang="zh"] #navbar .navbar-nav .nav-item:not(.lang-toggle-item) {
+    min-width: 52px;
+  }
+
   #navbar .navbar-nav .nav-item.lang-toggle-item {
     margin-left: 0.25rem;
     padding-left: 0.6rem;
