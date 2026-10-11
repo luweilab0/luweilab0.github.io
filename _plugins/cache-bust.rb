@@ -14,7 +14,7 @@ module Jekyll
       end
 
       def digest!
-        [file_name, '?', Digest::MD5.hexdigest(file_contents)].join
+        [file_name, '?', Digest::MD5.hexdigest(file_contents), '&v=', Time.now.to_i].join
       end
 
       private

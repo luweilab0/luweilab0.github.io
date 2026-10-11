@@ -1,12 +1,15 @@
+---
+---
 /* Service worker for luweilab.com
  * Strategy:
  *  - HTML pages:      network-first (content always fresh; cache = offline fallback)
  *  - Assets (css/js/img/fonts): stale-while-revalidate (instant repeat visits,
  *    refreshed silently in the background; at worst one visit stale)
  *  - Cross-origin requests: bypassed entirely
- * Bump CACHE_VERSION to force a full cache refresh on the next visit.
+ * CACHE_VERSION is stamped with the build time, so every deploy forces a full
+ * cache refresh on the next visit.
  */
-const CACHE_VERSION = "v1";
+const CACHE_VERSION = "{{ site.time | date: '%s' }}";
 const HTML_CACHE = `html-${CACHE_VERSION}`;
 const ASSET_CACHE = `assets-${CACHE_VERSION}`;
 
