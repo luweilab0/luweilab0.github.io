@@ -1,73 +1,53 @@
-# 网站编辑指南 / Website Editing Guide
+# Lu Lab Website — One-Page Handover Guide / 网站使用一页指南
 
-本网站使用 al-folio 主题的 Jekyll 构建，结构与 zhiwen10.github.io 相同，托管于 GitHub Pages。修改任何文件并提交（commit）后，网站会自动重建上线。
-This site is built with Jekyll using the al-folio theme (same structure as zhiwen10.github.io) and hosted on GitHub Pages. Commit any change and the site rebuilds automatically.
+**What this is / 这是什么**
+The lab website **https://luweilab.com**, built with Jekyll (al-folio theme).
+Source code lives in the GitHub repo **github.com/luweilab0/luweilab0.github.io**.
+Every change pushed to the `main` branch auto-rebuilds the live site in ~4 minutes.
+本网站是实验室官网，源码在 GitHub 仓库中。任何修改推送到 main 分支后约 4 分钟自动上线。
 
-**无需安装任何软件**：直接在 github.com 网页上打开对应文件，点右上角铅笔图标（Edit）即可编辑，保存时选择 "Commit changes"。
-**No software needed**: open the file on github.com, click the pencil icon (Edit), and choose "Commit changes" to save.
+**Accounts / 账号（均基于实验室 Google 账号注册）**
 
-## 改什么内容，编哪个文件 / Which file to edit
+| Account 账号 | What it holds 用途 | Where 地址 |
+|---|---|---|
+| Google | base account, receives all recovery emails 基础邮箱 | gmail.com |
+| GitHub (luweilab0) | the website code + hosting 网站源码与托管 | github.com |
+| Cloudflare | the luweilab.com domain (~$11/yr renewal) 域名与DNS | cloudflare.com |
 
-| 内容 Content | 文件 File |
+Keep these three logins with the designated lab member. 账号由指定成员保管。
+
+---
+
+## Method 1 — Edit directly on GitHub (no software, 5 minutes) / 方法一：网页直接改
+
+1. Sign in to github.com as **luweilab0**.
+2. Open the repo, find the file to edit (see table below), click the **pencil icon ✎**, edit, then **Commit changes**.
+3. Wait ~4 minutes, refresh https://luweilab.com.
+
+| To change 想改什么 | Edit this file 编辑哪个文件 |
 |---|---|
-| 新闻 News | `_news/` — 每条新闻两个文件：英文 `YYYY-MM-DD-名称.md`，中文 `YYYY-MM-DD-名称-zh.md` |
-| 论文 Publications | `_bibliography/papers.bib`（BibTeX；每个条目 `@article{...}`） |
-| 团队成员 Team members | 占位卡片：`_data/team.yml`；正式成员卡片：`_pages/team.md` 与 `_pages/team-zh.md` |
-| 首页 / 研究 / 招聘 / 联系等页面文字 | `_pages/` 下对应的 `.md` 文件，每页分英文（如 `research.md`）和中文（`research-zh.md`）两个文件 |
-| 页眉、页脚、导航 | `_includes/header.liquid`、`_includes/footer.liquid`（谨慎修改 / edit with care） |
-| 全站设置（标题、邮箱等） | `_config.yml`（谨慎修改 / edit with care） |
+| Add a news item 加新闻 | create a file in `_news/` (copy an existing one; en + zh pair) |
+| Team members 团队成员 | `_data/team.yml` |
+| Publications 论文 | `_bibliography/papers.bib` (add `doi={...}` to auto-link) |
+| Page text 页面文字 | `_pages/*.md` (each page has en + zh versions) |
+| Front-page matrix 首页四格 | `_pages/home.md` / `home-zh.md` |
 
-## 示例 / Examples
+**Golden rule / 重要原则:** if you are not sure, don't touch `_config.yml`, `_layouts/`, `_includes/`, `_sass/`, `.github/`. 不确定就不要动这些文件。
 
-添加一篇论文（加在 `_bibliography/papers.bib` 中；`Lu*` 的星号表示通讯作者，`†` 表示共同第一作者，标在姓后面）：
-Add a paper (in `_bibliography/papers.bib`; `*` marks the corresponding author and `†` co-first authors, attached to the last name):
+## Method 2 — Ask an AI agent / 方法二：让 AI 助手改
 
-```bibtex
-@article{zhang2026paper,
-  title={Paper title},
-  author={Zhang, S and Li, M and Lu*, W},
-  journal={Neuron},
-  volume={100},
-  number={1},
-  pages={1--12},
-  year={2026},
-}
+On a computer with the AI coding tool (e.g., Kimi Code CLI):
+
+```
+git clone https://github.com/luweilab0/luweilab0.github.io.git
 ```
 
-添加一条新闻（在 `_news/` 新建两个文件，文件名以日期开头；`lang: en` 为英文、`lang: zh` 为中文）：
-Add a news item (create two files in `_news/`, names starting with the date; `lang: en` for English, `lang: zh` for Chinese):
+Then just describe the change in plain language, e.g.:
+> "Add a news item: our paper was accepted at Neuron on 2026-10-01" / "把张三加到团队成员，博士后"
 
-```markdown
----
-layout: post
-date: 2026-10-01 09:00:00+0800
-inline: true
-related_posts: false
-lang: en
+The agent will edit, preview locally (`bundle exec jekyll serve`), and push. First push asks you to sign in via browser once — after that it's automatic.
+AI 会修改、本地预览并推送；首次推送需在浏览器登录一次 GitHub 账号。
+
 ---
 
-**Headline** — News text. [Optional link →](https://example.com/report)
-```
-
-添加一名团队成员（占位卡片在 `_data/team.yml` 中添加；正式成员仿照 `_pages/team.md` 中 PI 卡片的写法，中英文页面各加一份）：
-Add a team member (placeholder cards go in `_data/team.yml`; for a full member card, copy the PI card pattern in `_pages/team.md`, once per language):
-
-```yaml
-- label_zh: '张三'
-  label_en: 'San Zhang'
-  text_zh: '博士后 — 研究方向：GABA突触可塑性。'
-  text_en: 'Postdoc — research focus: GABAergic synaptic plasticity.'
-```
-
-## 注意事项 / Notes
-
-- 中英文是两个独立页面文件：英文 `xxx.md`，中文 `xxx-zh.md`；导航上的 EN/中文 按钮通过 front matter 里的 `lang_ref`（两页相同）自动配对。改动内容时两个文件都要改。
-  English and Chinese are separate page files: `xxx.md` (en) and `xxx-zh.md` (zh); the EN/中文 nav button pairs them via the shared `lang_ref` in the front matter. Always update both.
-- YAML 文件里所有文字都用单引号 `'...'` 括起来；文字内若有撇号（如 `lab's`），写成两个单引号（`lab''s`）。
-  In YAML files, wrap all text in single quotes `'...'`; double any apostrophe inside (`lab''s`).
-- 编辑 `.md` 页面时，只改 `---` 下方的主体内容；文件顶部的 front matter（`layout`、`lang`、`lang_ref` 等）不要删。
-  When editing `.md` pages, only change the content below the `---` front matter block; do not delete the front matter.
-- 论文按年份自动从新到旧分组显示，无需手动修改。/ Papers are grouped by year automatically, newest first.
-- 首页聚散转调四象限的插图在 `assets/img/`（`ju.svg`、`san.svg`、`zhuan.svg`、`tiao.svg`）。/ The four quadrant illustrations on the front page live in `assets/img/`.
-
-<!-- Last deployed via GitHub Actions -->
+**If something breaks / 出问题怎么办:** repo → Actions tab shows the build log; the previous version is always recoverable via git history (`git log` / GitHub History button). Domain and hosting emails go to the Google account — watch for the yearly Cloudflare renewal notice.
