@@ -2067,6 +2067,11 @@ body h6 {
   #navbar .navbar-nav .nav-item.lang-toggle-item {
     margin-left: 0.25rem;
     padding-left: 0.6rem;
+    flex-shrink: 0;
+
+    .nav-link {
+      white-space: nowrap; // never stack 中/文 vertically
+    }
   }
 
   #navbar .navbar-brand.lab-brand .brand-name {
