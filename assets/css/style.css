@@ -35,33 +35,36 @@ html[lang="en"] .lang-zh { display: none; }
   border-bottom: 1px solid var(--line);
 }
 .site-header .container {
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: space-between; gap: 40px;
   padding-top: 12px; padding-bottom: 12px;
 }
-.brand { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); }
+.brand { display: flex; flex-direction: column; gap: 2px; text-decoration: none; color: var(--text); flex-shrink: 1; }
 .brand-name {
   font-family: var(--serif); font-size: 1.2rem; font-weight: 700;
   letter-spacing: 0.03em;
 }
 .brand-sub { font-size: 0.9rem; color: var(--muted); margin-left: 10px; }
-.brand-tag { font-size: 0.78rem; color: var(--muted); }
+.brand-tag { font-size: 0.78rem; color: var(--muted); max-width: 290px; line-height: 1.4; }
 
-.site-nav { display: flex; align-items: baseline; gap: 2px; }
+.site-nav { display: flex; align-items: baseline; gap: 0; flex-wrap: nowrap; flex-shrink: 0; }
 .site-nav a {
   text-decoration: none; color: var(--text);
-  padding: 4px 10px;
-  font-size: 0.95rem;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  white-space: nowrap;
   border-bottom: 2px solid transparent;
 }
 .site-nav a:hover { color: var(--accent); }
 .site-nav a.active { color: var(--accent); border-bottom-color: var(--accent); }
 
 .lang-toggle {
-  margin-left: 14px;
+  margin-left: 10px;
   border: none; background: none;
   color: var(--muted);
   font-size: 0.9rem; padding: 4px 2px; cursor: pointer;
   text-decoration: underline;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .lang-toggle:hover { color: var(--accent); }
 
@@ -71,7 +74,7 @@ html[lang="en"] .lang-zh { display: none; }
   font-size: 1.4rem; color: var(--text); padding: 4px 8px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 940px) {
   .site-header .container { align-items: center; }
   .nav-hamburger { display: block; }
   .site-nav {
