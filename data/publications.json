@@ -1,0 +1,132 @@
+[
+  {
+    "id": "paper-1",
+    "year": 2024,
+    "title": {
+      "zh": "TMEM132B–GABAᴀ 受体复合物调控酒精在大脑中的作用",
+      "en": "The TMEM132B-GABAA receptor complex controls alcohol actions in the brain."
+    },
+    "authors": "Wang GH, Peng SX, Castellano D, Wu KW, Han WY, Tian QJ, Dong LJ, Li Y, Lu W",
+    "journal": "Cell",
+    "details": "187, 6649–6668",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-2",
+    "year": 2024,
+    "title": {
+      "zh": "靶向应激响应信号通路逆转焦虑",
+      "en": "Reversing anxiety by targeting a stress-responsive signaling pathway."
+    },
+    "authors": "Pandey S, Han WY, Li J, Shepard RD, Wu KW, Castellano D, Tian QJ, Dong LJ, Li Y, Lu W",
+    "journal": "PNAS",
+    "details": "121 (31)",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-3",
+    "year": 2022,
+    "title": {
+      "zh": "睡眠与觉醒周期动态调节海马抑制性突触可塑性",
+      "en": "Sleep and wake cycles dynamically modulate hippocampal inhibitory synaptic plasticity."
+    },
+    "authors": "Wu KW, Han WY, Lu W",
+    "journal": "PLOS Biology",
+    "details": "20 (11), e3001812",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-4",
+    "year": 2021,
+    "title": {
+      "zh": "Shisa7 以活动和睡眠依赖的方式调控持续性抑制",
+      "en": "Activity- and sleep-dependent regulation of tonic inhibition by Shisa7."
+    },
+    "authors": "Wu KW, Han WY, Tian QJ, Li Y, Lu W",
+    "journal": "Cell Reports",
+    "details": "34 (12), 108899",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-5",
+    "year": 2021,
+    "title": {
+      "zh": "NMDA 受体亚型对持续性 GABA 能抑制的差异性调控",
+      "en": "Distinct regulation of tonic GABAergic inhibition by NMDA receptor subtypes."
+    },
+    "authors": "Wu KW, Castellano D, Tian QJ, Lu W",
+    "journal": "Cell Reports",
+    "details": "37 (6), 109960",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-6",
+    "year": 2019,
+    "title": {
+      "zh": "Shisa7 是调控苯二氮䓬类药物作用的 GABAᴀ 受体辅助亚基",
+      "en": "Shisa7 is a GABAA receptor auxiliary subunit controlling benzodiazepine actions."
+    },
+    "authors": "Han WY, Li J, Pelkey KA, Pandey S, Chen XM, Wang YX, Wu KW, Ge LH, Li TM, Castellano D, Liu CY, Wu LG, Petralia RS, Lynch JW, McBain CJ, Lu W",
+    "journal": "Science",
+    "details": "366",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-7",
+    "year": 2017,
+    "title": {
+      "zh": "对 Neuroligin 2 和 Slitrk3 的分子解析揭示 GABA 能突触发育的关键框架",
+      "en": "Molecular Dissection of Neuroligin 2 and Slitrk3 Reveals an Essential Framework for GABAergic Synapse Development."
+    },
+    "authors": "Li J, Han WY, Pelkey KA, Duan JJ, Mao X, Wang YX, Craig MT, Dong LJ, Petralia RS, McBain CJ, Lu W",
+    "journal": "Neuron",
+    "details": "96 (4), 808–826",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-8",
+    "year": 2016,
+    "title": {
+      "zh": "抑制性突触发育依赖于 NMDA 受体介导的机制",
+      "en": "An NMDA receptor-dependent mechanism underlies inhibitory synapse development."
+    },
+    "authors": "Gu X, Zhou L, Lu W",
+    "journal": "Cell Reports",
+    "details": "14",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-9",
+    "year": 2013,
+    "title": {
+      "zh": "兴奋性突触传递在调控神经元结构与功能中的细胞自主作用",
+      "en": "The cell-autonomous role of excitatory synaptic transmission in the regulation of neuronal structure and function."
+    },
+    "authors": "Lu W, Bushong EA, Shih TP, Ellisman MH, Nicoll RA",
+    "journal": "Neuron",
+    "details": "78 (3), 433–439",
+    "doi": "",
+    "url": ""
+  },
+  {
+    "id": "paper-10",
+    "year": 2009,
+    "title": {
+      "zh": "单细胞遗传学方法揭示突触 AMPA 受体的亚基组成",
+      "en": "Subunit composition of synaptic AMPA receptors revealed by a single-cell genetic approach."
+    },
+    "authors": "Lu W, Shi Y, Jackson AC, Bjorgan K, During MJ, Sprengel R, Seeburg PH, Nicoll RA",
+    "journal": "Neuron",
+    "details": "62, 254–268",
+    "doi": "",
+    "url": ""
+  }
+]

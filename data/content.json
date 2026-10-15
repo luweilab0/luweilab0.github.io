@@ -1,0 +1,264 @@
+{
+  "brand": {
+    "zh": "陆伟实验室",
+    "en": "LU LAB"
+  },
+  "institute": {
+    "zh": "深圳医学科学院",
+    "en": "Shenzhen Medical Academy of Research and Translation"
+  },
+  "home": {
+    "title": {
+      "zh": "欢迎来到陆伟实验室",
+      "en": "Welcome to the Laboratory of Wei Lu"
+    },
+    "intro": {
+      "zh": "我们致力于揭示突触发育与功能调控的分子和神经环路机制，探索脑疾病的潜在治疗靶点。",
+      "en": "We investigate the molecular and circuit mechanisms of synaptic development and function, and explore potential therapeutic targets for brain disorders."
+    },
+    "button": {
+      "zh": "了解更多",
+      "en": "Learn more"
+    }
+  },
+  "research": {
+    "intro": [
+      {
+        "zh": "陆伟实验室关注突触发育与功能调控，以及焦虑、抑郁、麻醉和酒精作用的神经生物学机制。",
+        "en": "The Wei Lu laboratory studies synaptic development and the regulation of synaptic function, together with the neurobiological mechanisms underlying anxiety, depression, anesthesia and the effects of alcohol."
+      },
+      {
+        "zh": "我们以啮齿类动物的 GABA 能突触为主要模式系统，研究大脑功能和脑疾病的分子与神经环路机制。",
+        "en": "We use GABAergic synapses in rodents as a primary model system to investigate the molecular and neural circuit mechanisms of brain function and brain disorders."
+      },
+      {
+        "zh": "通过发现与研究调控突触功能的蛋白，我们希望加深对突触功能及其病理机制的理解，并探索靶向 GABAᴀ 受体的新一代脑疾病治疗策略。",
+        "en": "By identifying and studying proteins that regulate synaptic function, we aim to understand synaptic mechanisms in health and disease and explore new therapeutic strategies targeting GABAᴀ receptors."
+      },
+      {
+        "zh": "这些研究将丰富我们对 GABA 能突触及其在大脑中的作用和功能调控的理解，为癫痫、焦虑症、失眠和酒精成瘾等脑疾病提供潜在的新药物靶点。",
+        "en": "These studies aim to deepen our understanding of GABAergic synapses and their regulation in the brain, and identify potential drug targets for disorders including epilepsy, anxiety, insomnia and alcohol addiction."
+      }
+    ],
+    "areas": [
+      {
+        "id": "synapses",
+        "title": {
+          "zh": "GABA 能突触的发育与传递",
+          "en": "GABAergic synapse development and transmission"
+        },
+        "text": {
+          "zh": "研究调控 GABA 能突触发育与传递的分子机制，以及这些机制在动物行为和神经疾病中的作用。",
+          "en": "We investigate the molecular mechanisms that regulate GABAergic synapse development and transmission, and their roles in animal behavior and neurological disorders."
+        }
+      },
+      {
+        "id": "receptors",
+        "title": {
+          "zh": "GABAᴀ 受体辅助亚基与精神药理学",
+          "en": "GABAᴀ receptor auxiliary subunits and psychopharmacology"
+        },
+        "text": {
+          "zh": "鉴定和研究新型 GABAᴀ 受体辅助亚基，探索 GABAᴀ 受体精神药理学，为靶向受体的脑疾病治疗策略提供依据。",
+          "en": "We identify and investigate novel GABAᴀ receptor auxiliary subunits and study GABAᴀ receptor psychopharmacology to inform receptor-targeted approaches to brain disorders."
+        }
+      },
+      {
+        "id": "anesthesia",
+        "title": {
+          "zh": "麻醉与意识",
+          "en": "Anesthesia and consciousness"
+        },
+        "text": {
+          "zh": "研究麻醉和意识的分子与神经环路机制，理解抑制性信号如何参与脑状态调控。",
+          "en": "We study the molecular and neural circuit mechanisms of anesthesia and consciousness, exploring how inhibitory signaling contributes to the regulation of brain states."
+        }
+      }
+    ],
+    "methods": {
+      "zh": "课题组主要使用啮齿类动物模型，结合分子生物学与生化技术、电生理膜片钳记录、分子遗传学操作、脑电与肌电监测、在体钙成像、神经示踪、光遗传学和化学遗传学，开展跨学科研究。",
+      "en": "Our interdisciplinary research uses rodent models and combines molecular biology and biochemistry, patch-clamp electrophysiology, molecular genetics, EEG/EMG monitoring, in vivo calcium imaging, neural tracing, optogenetics and chemogenetics."
+    }
+  },
+  "pi": {
+    "title": {
+      "zh": "资深研究员 · 课题组负责人",
+      "en": "Senior Investigator · Principal Investigator"
+    },
+    "bio": [
+      {
+        "zh": "陆伟博士在纽约大学师从 Edward Ziff 教授攻读博士学位，主要研究神经元谷氨酸受体及其相互作用蛋白的生化特性。",
+        "en": "Wei Lu received his PhD from New York University under the supervision of Edward Ziff, studying the biochemical properties of neuronal glutamate receptors and their interacting proteins."
+      },
+      {
+        "zh": "随后，他在加州大学旧金山分校 Roger Nicoll 教授实验室从事博士后研究，结合电生理学与单细胞遗传学方法，探索兴奋性突触传递的分子机制。",
+        "en": "He then conducted postdoctoral research in Roger Nicoll’s laboratory at the University of California, San Francisco, combining electrophysiology with single-cell genetics to investigate the molecular mechanisms of excitatory synaptic transmission."
+      },
+      {
+        "zh": "2012—2025 年，陆伟博士在美国国立卫生研究院神经疾病与卒中研究所（NIH/NINDS）工作，先后担任研究员和资深研究员。2025 年全职加盟深圳医学科学院。",
+        "en": "From 2012 to 2025, Wei Lu worked at the National Institute of Neurological Disorders and Stroke, National Institutes of Health (NIH/NINDS), serving as an Investigator and subsequently a Senior Investigator. He joined the Shenzhen Medical Academy of Research and Translation full time in 2025."
+      },
+      {
+        "zh": "他的研究聚焦健康与疾病状态下的突触发育与功能，以及神经系统疾病的突触病理机制，已在 Science、Cell、Neuron、PNAS、Nature Communications 等学术期刊发表论文 50 余篇。",
+        "en": "His research focuses on synaptic development and function in health and disease, and the synaptic mechanisms of neurological disorders. He has published more than 50 papers in journals including Science, Cell, Neuron, PNAS and Nature Communications."
+      },
+      {
+        "zh": "陆伟博士致力于建设自由、开放、协作共进的科研团队，为成员提供系统性的科研训练与发展平台。",
+        "en": "Wei Lu aims to build a free, open and collaborative research environment, providing systematic scientific training and opportunities for professional development."
+      }
+    ],
+    "career": [
+      [
+        "2025–",
+        {
+          "zh": "深圳医学科学院",
+          "en": "Shenzhen Medical Academy of Research and Translation"
+        },
+        {
+          "zh": "资深研究员",
+          "en": "Senior Investigator"
+        }
+      ],
+      [
+        "2012–2025",
+        {
+          "zh": "美国国立卫生研究院 NINDS",
+          "en": "National Institutes of Health, NINDS"
+        },
+        {
+          "zh": "研究员、资深研究员",
+          "en": "Investigator; Senior Investigator"
+        }
+      ],
+      [
+        "2006–2012",
+        {
+          "zh": "加州大学旧金山分校",
+          "en": "University of California, San Francisco"
+        },
+        {
+          "zh": "博士后",
+          "en": "Postdoctoral Fellow"
+        }
+      ],
+      [
+        "2001–2005",
+        {
+          "zh": "纽约大学",
+          "en": "New York University"
+        },
+        {
+          "zh": "博士",
+          "en": "PhD"
+        }
+      ],
+      [
+        "1997–2000",
+        {
+          "zh": "浙江大学",
+          "en": "Zhejiang University"
+        },
+        {
+          "zh": "硕士",
+          "en": "Master’s degree"
+        }
+      ],
+      [
+        "1993–1997",
+        {
+          "zh": "四川大学",
+          "en": "Sichuan University"
+        },
+        {
+          "zh": "学士",
+          "en": "Bachelor’s degree"
+        }
+      ]
+    ],
+    "awards": [
+      {
+        "zh": "2019 年 · NIH NINDS 所长奖",
+        "en": "2019 · NIH NINDS Director’s Award"
+      },
+      {
+        "zh": "2011 年 · NIH NIMH 首席研究员发展奖",
+        "en": "2011 · NIH NIMH Principal Investigator Development Award"
+      }
+    ]
+  },
+  "contact": {
+    "email": "luwei@smart.org.cn",
+    "address": {
+      "zh": "中国深圳市光明区卫光生命科学园",
+      "en": "Weiguang Life Science Park, Guangming District, Shenzhen, China"
+    },
+    "phone": "",
+    "room": "",
+    "hiring_email": "gaba@smart.org.cn"
+  },
+  "media": [],
+  "gallery": [],
+  "open_positions": [],
+  "lab_name": {
+    "zh": "分子认知实验室",
+    "en": "Laboratory of Molecular Cognition"
+  },
+  "hiring": {
+    "intro": {
+      "zh": "深圳医学科学院分子认知实验室（陆伟课题组）诚邀有志于神经科学研究的同仁加入。",
+      "en": "The Laboratory of Molecular Cognition (Wei Lu Lab) at the Shenzhen Medical Academy of Research and Translation welcomes applicants interested in neuroscience research."
+    },
+    "positions": [
+      {
+        "zh": "副研究员",
+        "en": "Associate Researcher"
+      },
+      {
+        "zh": "助理研究员",
+        "en": "Assistant Researcher"
+      },
+      {
+        "zh": "博士后",
+        "en": "Postdoctoral Fellow"
+      },
+      {
+        "zh": "实验室管理员",
+        "en": "Lab Manager"
+      },
+      {
+        "zh": "科研助理",
+        "en": "Research Assistant"
+      }
+    ],
+    "culture": {
+      "zh": "实验室位于深圳市光明区卫光生命科学园，专注于突触功能、焦虑与抑郁、催眠与麻醉的分子和环路机制。科研项目源自广泛而深入的讨论，聚焦具有重要科学价值的问题。我们重视自由、开放与协作，为成员提供系统性的科研训练。",
+      "en": "Based at Weiguang Life Science Park in Shenzhen’s Guangming District, the laboratory studies the molecular and circuit mechanisms of synaptic function, anxiety and depression, and hypnosis and anesthesia. Projects emerge from broad, in-depth discussion of important scientific questions. We value an open, collaborative environment and systematic research training."
+    },
+    "methods": {
+      "zh": "课题组主要使用啮齿类动物模型，结合分子生物学与生化技术、电生理膜片钳记录、分子遗传学操作、脑电与肌电监测、在体钙成像、神经示踪、光遗传学和化学遗传学，开展跨学科研究。",
+      "en": "Our interdisciplinary research uses rodent models and combines molecular biology and biochemistry, patch-clamp electrophysiology, molecular genetics, EEG/EMG monitoring, in vivo calcium imaging, neural tracing, optogenetics and chemogenetics."
+    },
+    "materials": [
+      {
+        "zh": "完整的中文或英文简历，包括教育背景、科研经历与成果、主要科研技能、所获奖项及科研兴趣。",
+        "en": "A complete CV in Chinese or English, including education, research experience and achievements, technical skills, awards and research interests."
+      },
+      {
+        "zh": "副研究员、助理研究员和博士后申请者需提供两位推荐人信息，并请推荐人直接将推荐信发送至 gaba@smart.org.cn。",
+        "en": "Applicants for Associate Researcher, Assistant Researcher and Postdoctoral Fellow positions should provide the details of two referees and ask them to send recommendation letters directly to gaba@smart.org.cn."
+      },
+      {
+        "zh": "其他能够说明科研和工作能力的材料。",
+        "en": "Other materials demonstrating your research and professional capabilities."
+      }
+    ],
+    "submit": {
+      "zh": "请将 PDF 版应聘材料作为附件发送至 gaba@smart.org.cn。邮件主题请注明“应聘岗位-姓名-专业”。材料审核后将安排面试。",
+      "en": "Please send your application materials as PDF attachments to gaba@smart.org.cn, using the subject line “Position–Name–Discipline”. Interviews will be arranged following review."
+    },
+    "notes": {
+      "zh": "应聘材料予以保密，待遇面议。招聘信息在职位未满前长期有效。",
+      "en": "Application materials will be kept confidential. Compensation will be discussed individually. Applications remain open until positions are filled."
+    }
+  }
+}

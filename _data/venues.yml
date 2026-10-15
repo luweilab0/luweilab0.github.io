@@ -1,8 +1,0 @@
-# Add journal abbreviations here to enable colored badges on the publications page.
-# Format:
-# "ABBR":
-#   url: https://example.com
-#   color: "#00369f"
-#
-# The abbr field in your bib entries must match the key here.
-

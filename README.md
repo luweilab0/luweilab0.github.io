@@ -1,53 +1,53 @@
-# Lu Lab Website — One-Page Handover Guide / 网站使用一页指南
+# 陆伟实验室网站
 
-**What this is / 这是什么**
-The lab website **https://luweilab.com**, built with Jekyll (al-folio theme).
-Source code lives in the GitHub repo **github.com/luweilab0/luweilab0.github.io**.
-Every change pushed to the `main` branch auto-rebuilds the live site in ~4 minutes.
-本网站是实验室官网，源码在 GitHub 仓库中。任何修改推送到 main 分支后约 4 分钟自动上线。
+以 SUR LAB 的视觉结构为参考重新编写：深色荧光显微风格首页、白色内页、轻量导航、居中成员照片和论文年表。参考站只用于版式研究，没有复制其图片、文案、代码或 Simons Center 模块。
 
-**Accounts / 账号（均基于实验室 Google 账号注册）**
+## 打开与预览
 
-| Account 账号 | What it holds 用途 | Where 地址 |
-|---|---|---|
-| Google | base account, receives all recovery emails 基础邮箱 | gmail.com |
-| GitHub (luweilab0) | the website code + hosting 网站源码与托管 | github.com |
-| Cloudflare | the luweilab.com domain (~$11/yr renewal) 域名与DNS | cloudflare.com |
+直接双击 `index.html` 打开英文首页，或 `zh/index.html` 打开中文首页。页面、图片、样式和脚本均使用本地相对路径，无需联网或安装依赖。也可在本目录运行 `python -m http.server 8765 --bind 127.0.0.1`，在浏览器中打开 http://127.0.0.1:8765/ 。
 
-Keep these three logins with the designated lab member. 账号由指定成员保管。
+全站右上角提供“中文 / EN”入口，切换到当前页面的另一语言。名称、导航、正文、按钮、职位、论文标题和浏览器标题随之切换；邮箱、网址、期刊名和文献作者的原始署名保持不变。英文学术人名等专有名词保留原名。
 
----
+## 内容维护
 
-## Method 1 — Edit directly on GitHub (no software, 5 minutes) / 方法一：网页直接改
+- `data/content.json`：首页、研究、陆伟教授简介、招聘和联系信息的中英文文本。
+- `data/people.json`：成员姓名、岗位、邮箱、照片路径。`photo` 为空表示显示无照片的空白区域；没有提供的简介和邮箱保持空值。
+- `data/publications.json`：10 篇提供的代表性论文及中文标题译文。未提供的 DOI 和全文链接保持空值。
+- `scripts/build.py`：生成完整静态页面，使用 Python 3.12 或更高版本。更改 JSON 后运行 `python scripts/build.py`。
+- `scripts/validate.py`：校验本地链接、锚点、语言切换、图片属性和大小、成员顺序以及域名。当前人员和论文数量断言在名单变化后需同步更新。
+- `scripts/test-interactions.cjs`：使用 Node 内置模块验证搜索、年份筛选、无结果状态、重置、菜单及语言锚点逻辑。它不是浏览器渲染测试。
+- `assets/site.css`、`assets/site.js`：所有样式和交互，无第三方脚本或在线字体。
 
-1. Sign in to github.com as **luweilab0**.
-2. Open the repo, find the file to edit (see table below), click the **pencil icon ✎**, edit, then **Commit changes**.
-3. Wait ~4 minutes, refresh https://luweilab.com.
+团队顺序：陆伟教授、副研究员、助理研究员、博士后、研究生、技术员、实验室管理员。组内按提供文档顺序。
 
-| To change 想改什么 | Edit this file 编辑哪个文件 |
-|---|---|
-| Add a news item 加新闻 | create a file in `_news/` (copy an existing one; en + zh pair) |
-| Team members 团队成员 | `_data/team.yml` |
-| Publications 论文 | `_bibliography/papers.bib` (add `doi={...}` to auto-link) |
-| Page text 页面文字 | `_pages/*.md` (each page has en + zh versions) |
-| Front-page matrix 首页四格 | `_pages/home.md` / `home-zh.md` |
+## 图片
 
-**Golden rule / 重要原则:** if you are not sure, don't touch `_config.yml`, `_layouts/`, `_includes/`, `_sass/`, `.github/`. 不确定就不要动这些文件。
+16 张人物照片已转为 WebP，最长边不超过 800 像素，按页面显示使用固定比例、延迟加载和异步解码。原始照片保留在上级素材文件夹中。张思源使用后补的室外持花照片，助理研究员覃丽明的新增照片已加入。
 
-## Method 2 — Ask an AI agent / 方法二：让 AI 助手改
+三个背景分别位于 `assets/images/backgrounds/home-neurons.webp`、`inner-neurons.webp`、`contact-neurons.webp`，另有对应 `-mobile.webp`。均为独立 AI 生成的装饰性图片，不是实际实验图。图片来源、原始 PNG 和完整生成提示词在素材文件夹的 `generated-backgrounds/` 中。
 
-On a computer with the AI coding tool (e.g., Kimi Code CLI):
+后续可直接用同名 WebP 替换，也可修改 `assets/site.css` 中三个背景变量。手机断点引用需一并更新。若使用视频背景，应添加 video 元素并保留静态回退图。
 
-```
-git clone https://github.com/luweilab0/luweilab0.github.io.git
-```
+## 尚未提供的信息
 
-Then just describe the change in plain language, e.g.:
-> "Add a news item: our paper was accepted at Neuron on 2026-10-01" / "把张三加到团队成员，博士后"
+- 伍轩远、戴葉琳、秦晓玥的照片为空。
+- 秦思飞的邮箱为空。
+- 其余成员个人介绍为空；未编造学历、经历或研究方向。
+- 新闻动态、实验室相册为空，等待真实素材。
+- 联系电话、具体办公室为空。
+- 2019 年 Science 论文的页码在原材料中不完整；2016 年 Cell Reports 的页码与旧站记录不一致。本版暂不显示这两条页码，等待核对。
+- 2012—2025 年 NIH 职务采用招聘文档中“先后担任研究员和资深研究员”的描述，未把整段时间全部写成资深研究员。
 
-The agent will edit, preview locally (`bundle exec jekyll serve`), and push. First push asks you to sign in via browser once — after that it's automatic.
-AI 会修改、本地预览并推送；首次推送需在浏览器登录一次 GitHub 账号。
+## 域名与上线
 
----
+`CNAME` 保留 `luweilab.com`，规范链接和 sitemap 也使用 https://luweilab.com/ 。Cloudflare 域名配置不在本地代码中，未作修改。
 
-**If something breaks / 出问题怎么办:** repo → Actions tab shows the build log; the previous version is always recoverable via git history (`git log` / GitHub History button). Domain and hosting emails go to the Google account — watch for the yearly Cloudflare renewal notice.
+本次只准备本地代码与备份，未推送到 GitHub、未修改线上网站。`.github/workflows/deploy.yml` 已替换旧 Jekyll 构建流程，改为生成静态页面、校验、打包并部署到原有 `gh-pages` 分支。GitHub 仓库的 Pages 应继续指向该分支。正式上线时需推送新代码，并检查 GitHub Actions 和域名结果。
+
+`python scripts/package.py` 生成只含网页与资源的 `dist/`。上线产物不包含原始个人资料、生成脚本、素材目录和备份。
+
+## 验证范围
+
+已执行静态生成、26 个 HTML 文件的链接/锚点/语言入口检查、图片资源与体积检查、JavaScript 语法检查，以及中英文交互逻辑单元检查。样式包含桌面与手机断点、键盘焦点、跳转正文和减少动画支持。
+
+当前环境的自动浏览器访问本地预览被安全策略拦截，未完成真实浏览器视觉与设备测试。发布前应在桌面和手机浏览器打开页面检查布局。

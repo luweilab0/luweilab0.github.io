@@ -1,0 +1,344 @@
+[
+  {
+    "name": {
+      "zh": "陆伟",
+      "en": "Wei Lu"
+    },
+    "email": "luwei@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/wei-lu.webp",
+    "id": "wei-lu",
+    "role": {
+      "zh": "课题组负责人",
+      "en": "Principal Investigator"
+    },
+    "group": "Professor"
+  },
+  {
+    "name": {
+      "zh": "阳弘江",
+      "en": "Hongjiang Yang"
+    },
+    "email": "yanghongjiang@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/hongjiang-yang.webp",
+    "id": "hongjiang-yang",
+    "role": {
+      "zh": "副研究员",
+      "en": "Associate Researcher"
+    },
+    "group": "Associate Researcher"
+  },
+  {
+    "name": {
+      "zh": "覃丽明",
+      "en": "Liming Qin"
+    },
+    "email": "qinliming@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/liming-qin.webp",
+    "id": "liming-qin",
+    "role": {
+      "zh": "助理研究员",
+      "en": "Assistant Researcher"
+    },
+    "group": "Assistant Researcher"
+  },
+  {
+    "name": {
+      "zh": "罗梦浔",
+      "en": "Mengxun Luo"
+    },
+    "email": "luomengxun@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/mengxun-luo.webp",
+    "id": "mengxun-luo",
+    "role": {
+      "zh": "博士后",
+      "en": "Postdoctoral Fellow"
+    },
+    "group": "Postdoctoral Fellow"
+  },
+  {
+    "name": {
+      "zh": "王强",
+      "en": "Qiang Wang"
+    },
+    "email": "wangqiang@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/qiang-wang.webp",
+    "id": "qiang-wang",
+    "role": {
+      "zh": "博士后",
+      "en": "Postdoctoral Fellow"
+    },
+    "group": "Postdoctoral Fellow"
+  },
+  {
+    "name": {
+      "zh": "刘文豪",
+      "en": "Wenhao Liu"
+    },
+    "email": "liuwenhao@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/wenhao-liu.webp",
+    "id": "wenhao-liu",
+    "role": {
+      "zh": "博士后",
+      "en": "Postdoctoral Fellow"
+    },
+    "group": "Postdoctoral Fellow"
+  },
+  {
+    "name": {
+      "zh": "褚博煜",
+      "en": "Boyu Chu"
+    },
+    "email": "chuboyu@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/boyu-chu.webp",
+    "id": "boyu-chu",
+    "role": {
+      "zh": "博士后",
+      "en": "Postdoctoral Fellow"
+    },
+    "group": "Postdoctoral Fellow"
+  },
+  {
+    "name": {
+      "zh": "伍轩远",
+      "en": "Xuanyuan Wu"
+    },
+    "email": "wuxuanyuan@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "",
+    "id": "xuanyuan-wu",
+    "role": {
+      "zh": "博士后",
+      "en": "Postdoctoral Fellow"
+    },
+    "group": "Postdoctoral Fellow"
+  },
+  {
+    "name": {
+      "zh": "戴葉琳",
+      "en": "Yelin Dai"
+    },
+    "email": "daiyelin@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "",
+    "id": "yelin-dai",
+    "role": {
+      "zh": "博士后",
+      "en": "Postdoctoral Fellow"
+    },
+    "group": "Postdoctoral Fellow"
+  },
+  {
+    "name": {
+      "zh": "秦思飞",
+      "en": "Sifei Qin"
+    },
+    "email": "",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/sifei-qin.webp",
+    "id": "sifei-qin",
+    "role": {
+      "zh": "博士后",
+      "en": "Postdoctoral Fellow"
+    },
+    "group": "Postdoctoral Fellow"
+  },
+  {
+    "name": {
+      "zh": "张思源",
+      "en": "Siyuan Zhang"
+    },
+    "email": "zhangsiyuan1@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/siyuan-zhang.webp",
+    "id": "siyuan-zhang",
+    "role": {
+      "zh": "研究生",
+      "en": "Graduate Student"
+    },
+    "group": "Graduate Student"
+  },
+  {
+    "name": {
+      "zh": "袁杬",
+      "en": "Yuan yuan"
+    },
+    "email": "yuanyuan@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/yuan-yuan.webp",
+    "id": "yuan-yuan",
+    "role": {
+      "zh": "研究生",
+      "en": "Graduate Student"
+    },
+    "group": "Graduate Student"
+  },
+  {
+    "name": {
+      "zh": "林仁杰",
+      "en": "Renjie Lin"
+    },
+    "email": "linrenjie@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/renjie-lin.webp",
+    "id": "renjie-lin",
+    "role": {
+      "zh": "研究生",
+      "en": "Graduate Student"
+    },
+    "group": "Graduate Student"
+  },
+  {
+    "name": {
+      "zh": "段中英",
+      "en": "Zhongying Duan"
+    },
+    "email": "duanzhongying@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/zhongying-duan.webp",
+    "id": "zhongying-duan",
+    "role": {
+      "zh": "研究生",
+      "en": "Graduate Student"
+    },
+    "group": "Graduate Student"
+  },
+  {
+    "name": {
+      "zh": "刘富红",
+      "en": "Fuhong Liu"
+    },
+    "email": "liufuhong1@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/fuhong-liu.webp",
+    "id": "fuhong-liu",
+    "role": {
+      "zh": "研究生",
+      "en": "Graduate Student"
+    },
+    "group": "Graduate Student"
+  },
+  {
+    "name": {
+      "zh": "余释然",
+      "en": "Shiran Yu"
+    },
+    "email": "yushiran@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/shiran-yu.webp",
+    "id": "shiran-yu",
+    "role": {
+      "zh": "技术员",
+      "en": "Technical Associate"
+    },
+    "group": "Technical Associate"
+  },
+  {
+    "name": {
+      "zh": "朱红谣",
+      "en": "Hongyao Zhu"
+    },
+    "email": "zhuhongyao@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/hongyao-zhu.webp",
+    "id": "hongyao-zhu",
+    "role": {
+      "zh": "技术员",
+      "en": "Technical Associate"
+    },
+    "group": "Technical Associate"
+  },
+  {
+    "name": {
+      "zh": "仇丽",
+      "en": "Li Qiu"
+    },
+    "email": "qiuli@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "assets/images/people/li-qiu.webp",
+    "id": "li-qiu",
+    "role": {
+      "zh": "技术员",
+      "en": "Technical Associate"
+    },
+    "group": "Technical Associate"
+  },
+  {
+    "name": {
+      "zh": "秦晓玥",
+      "en": "Xiaoyue Qin"
+    },
+    "email": "qinxiaoyue@smart.org.cn",
+    "bio": {
+      "zh": "",
+      "en": ""
+    },
+    "photo": "",
+    "id": "xiaoyue-qin",
+    "role": {
+      "zh": "实验室管理员",
+      "en": "Lab Manager"
+    },
+    "group": "Lab Manager"
+  }
+]

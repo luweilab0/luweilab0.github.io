@@ -1,6 +1,3 @@
----
-permalink: /robots.txt
----
 User-agent: *
-
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Allow: /
+Sitemap: https://luweilab.com/sitemap.xml
