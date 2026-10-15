@@ -1,1 +1,3 @@
-User-agent: * Sitemap: https://luweilab.com/sitemap.xml
+User-agent: *
+Allow: /
+Sitemap: https://luweilab.com/sitemap.xml
