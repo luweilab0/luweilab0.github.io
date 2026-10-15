@@ -1,7 +1,7 @@
 # Lu Lab Website — Plan
 
 **Working name:** Lu Lab (陆伟实验室 / Molecular Cognition Lab, 分子认知实验室)
-**PI:** Prof. Wei Lu (陆伟) — Senior Investigator (资深研究员), Deputy Director of the Institute of Neuromodulation and Cognition (INC, 神经调控与认知研究所), SMART (深圳医学科学院 / Shenzhen Medical Academy of Research and Translation), Shenzhen.
+**PI:** Prof. Wei Lu (陆伟) — Senior Investigator (资深研究员), Institute of Neuromodulation and Cognition (INC, 神经调控与认知研究所), SMART (深圳医学科学院 / Shenzhen Medical Academy of Research and Translation), Shenzhen.
 **Status:** Mock site built (v1) — all 7 pages done, placeholders in place.
 
 ## 6. Next steps

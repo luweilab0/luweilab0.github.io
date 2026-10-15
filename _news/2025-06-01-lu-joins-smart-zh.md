@@ -6,4 +6,4 @@ related_posts: false
 lang: zh
 ---
 
-**陆伟教授全职加盟深圳医学科学院** — 陆伟教授自美国国立卫生研究院（NIH/NINDS）全职加盟深圳医学科学院，任资深研究员、神经调控与认知研究所（INC）副所长。[阅读SMART官方报道 →](https://smart.org.cn/en/detail/985.html)
+**陆伟教授全职加盟深圳医学科学院** — 陆伟教授自美国国立卫生研究院（NIH/NINDS）全职加盟深圳医学科学院，任神经调控与认知研究所（INC）资深研究员。[阅读SMART官方报道 →](https://smart.org.cn/en/detail/985.html)
