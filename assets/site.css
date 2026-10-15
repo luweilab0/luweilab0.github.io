@@ -8,3 +8,5 @@
 @media(max-width:390px){.header-inner{padding:0 16px;gap:10px}.people-grid{grid-template-columns:1fr}.person .role{min-height:0}.portrait{width:210px;height:265px}.hero-copy h1{font-size:37px}.language-switch{border-left:0;padding-left:0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 .join-intro{font-size:19px;line-height:1.8}.position-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 0}.position-list li{flex-basis:50%;position:relative;padding-left:18px}.position-list li:before{content:'›';position:absolute;left:0;color:var(--accent)}.application-list{padding-left:24px}.application-list li{padding-left:4px;margin:0 0 17px}.join-address{margin-top:28px;line-height:1.85}.join-contact{position:sticky;top:30px}.contact-art{align-self:start;min-height:560px}@media(max-width:760px){.position-list li{flex-basis:100%}.join-contact{position:static;margin-top:40px}.contact-art{min-height:300px}.join-intro{font-size:17px}}
+
+.contact-campus{display:block;width:100%;height:auto;align-self:start;margin:0}@media(max-width:760px){.contact-campus{margin-top:40px}}
