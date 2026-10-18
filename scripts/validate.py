@@ -46,7 +46,7 @@ for css in (ROOT/'assets').glob('*.css'):
 people=json.loads((ROOT/'data/people.json').read_text(encoding='utf-8'))
 assert len(people)==19
 assert next(i for i,p in enumerate(people) if p['group']=='Associate Researcher')<next(i for i,p in enumerate(people) if p['group']=='Assistant Researcher')
-assert len([p for p in people if p['photo']])==16
+assert len([p for p in people if p['photo']])==18
 assert next(p for p in people if p['id']=='liming-qin')['photo']
 assert next(p for p in people if p['id']=='sifei-qin')['email']==''
 assert (ROOT/'CNAME').read_text().strip()=='luweilab.com'
@@ -54,4 +54,4 @@ assert len(json.loads((ROOT/'data/publications.json').read_text(encoding='utf-8'
 for p in (ROOT/'assets/images').rglob('*'):
  if p.is_file() and p.stat().st_size>300_000:errors.append(f'Oversized image: {p.name}')
 if errors:raise SystemExit('\n'.join(errors))
-print(f'PASS: {len(pages)} HTML files; local links and fragments; both language targets on every page; image references and attributes; domain; 19 members in requested order; 16 photos; 10 publications; image size budget.')
+print(f'PASS: {len(pages)} HTML files; local links and fragments; both language targets on every page; image references and attributes; domain; 19 members in requested order; 18 photos; 10 publications; image size budget.')

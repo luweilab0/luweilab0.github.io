@@ -11,7 +11,9 @@ LABELS={
 'skip':('跳转到正文','Skip to content'),'menu':('菜单','Menu'),'close':('关闭菜单','Close menu'),'nav':('主导航','Main navigation'),'language':('切换语言','Switch language'),'photo':('的照片',' portrait'),'no-photo':('照片暂缺','Photo not provided'),'bio':('个人简介','Biography'),'profile':('查看个人简介','View biography'),'faculty':('深圳医学科学院个人主页','SMART faculty profile'),'areas':('研究项目','Research areas'),'career':('教育与工作经历','Education & appointments'),'awards':('奖项与荣誉','Awards & honors'),'papers':('代表性论文','Selected publications'),'year':('年份','Year'),'all':('全部年份','All years'),'search':('搜索论文','Search publications'),'placeholder':('输入关键词、作者或期刊','Keyword, author or journal'),'results':('篇论文','publications'),'empty':('没有找到匹配的论文。','No publications match your search.'),'clear':('清除筛选','Clear filters'),'email':('电子邮箱','Email'),'address':('地址','Address'),'phone':('电话','Phone'),'room':('办公室','Office'),'positions':('招聘职位','Open positions'),'inquiries':('欢迎通过电子邮箱联系我们。','Please contact us by email.'),'top':('返回顶部','Back to top'),'notfound':('页面未找到','Page not found'),'notfoundtext':('你访问的页面不存在或已移动。','The page you requested does not exist or has moved.'),'returnhome':('返回首页','Return home'),'subnav':('展开子菜单','Open submenu'),'years':('按年份浏览','Browse by year')}
 NAV=['research','members','media','publications','gallery','join','contact']
 LABELS.update({'environment':('研究环境','Research environment'),'methods':('研究方法','Research methods'),'application':('申请材料','Application materials'),'apply':('申请方式','How to apply'),'recruitment':('招聘咨询','Recruitment inquiries'),'academic':('学术联系','Academic inquiries'),'notes':('其他说明','Additional information')})
-PAGES=['home']+NAV+['wei-lu','404']
+LABELS.update({'gallery/facilities':('实验环境与设备','Laboratory & Equipment'),'gallery/life':('实验室生活','Life in the Lab')})
+GALLERY_PAGES=['gallery/facilities','gallery/life']
+PAGES=['home']+NAV+['wei-lu','404']+GALLERY_PAGES
 
 def route(page,lang):
  prefix='zh/' if lang=='zh' else ''
@@ -36,10 +38,11 @@ def make(page,lang):
   return f'<article class="person {"principal" if pi else ""}" id="{p["id"]}">{img(p,pi)}<h3>{name}</h3><p class="role">{ESC(v(D["pi"]["title"]) if pi else v(p["role"]))}</p>{email(p)}'+(f'<a class="profile-link" href="{link("wei-lu")}">{t("profile")} <span aria-hidden="true">→</span></a>' if pi else '')+'</article>'
  nav=''
  for n in NAV:
-  active=' aria-current="page"' if n==page or (page=='wei-lu' and n=='members') else ''
+  active=' aria-current="page"' if n==page or (page=='wei-lu' and n=='members') or (page in GALLERY_PAGES and n=='gallery') else ''
   sub=''
-  if n in ['research','members']:
+  if n in ['research','members','gallery']:
    entries=[(link('research')+'#'+a['id'],v(a['title'])) for a in D['research']['areas']] if n=='research' else [(link('wei-lu'),t('wei-lu')),(link('members'),t('members'))]
+   if n=='gallery':entries=[(link(g),t(g)) for g in GALLERY_PAGES]
    sub=f'<button class="sub-toggle" aria-expanded="false" aria-controls="sub-{n}" aria-label="{t("subnav")} · {t(n)}"><span aria-hidden="true">⌄</span></button><ul class="submenu" id="sub-{n}">' + ''.join(f'<li><a href="{u}">{ESC(s)}</a></li>' for u,s in entries)+'</ul>'
   nav+=f'<li class="nav-item"><a href="{link(n)}"{active}>{t(n)}</a>{sub}</li>'
  language=f'<div class="language-switch" role="group" aria-label="{t("language")}"><a href="{link(page,"zh")}" lang="zh-CN" hreflang="zh-CN" data-language="zh" {"aria-current=\"true\"" if lang=="zh" else ""}>中文</a><span aria-hidden="true">/</span><a href="{link(page,"en")}" lang="en" hreflang="en" data-language="en" {"aria-current=\"true\"" if lang=="en" else ""}>EN</a></div>'
@@ -80,7 +83,10 @@ def make(page,lang):
    sections+=f'<section class="publication-year" id="year-{y}"><h2>{y}</h2><div>{papers}</div></section>'
   yearlinks=f'<aside class="year-nav" aria-label="{t("years")}">'+''.join(f'<a href="#year-{y}">{y}</a>' for y in years)+'</aside>'
   body=f'<main id="content" class="page"><h1 class="page-title">{t(page)}</h1><p class="section-caption">{t("papers")}</p>{controls}<div class="publications-layout"><div>{sections}<p id="no-results" hidden>{t("empty")}</p></div>{yearlinks}</div></main>'
- elif page in ['media','gallery']:
+ elif page=='gallery' or page in GALLERY_PAGES:
+  tabs=f'<nav class="gallery-categories" aria-label="{t("gallery")}">'+''.join(f'<a href="{link(g)}"'+(' aria-current="page"' if page==g else '')+f'>{t(g)} <span aria-hidden="true">→</span></a>' for g in GALLERY_PAGES)+'</nav>'
+  body=f'<main id="content" class="page blank-page"><h1 class="page-title">{t(page)}</h1>{tabs}<div class="reserved-content"></div></main>'
+ elif page=='media':
   body=f'<main id="content" class="page blank-page"><h1 class="page-title">{t(page)}</h1><div class="reserved-content"></div></main>'
  elif page=='join':
   h=D['hiring']
