@@ -11,3 +11,8 @@
 
 .contact-campus{display:block;width:100%;height:auto;align-self:start;margin:0}@media(max-width:760px){.contact-campus{margin-top:40px}}
 .gallery-categories{display:flex;flex-wrap:wrap;gap:18px 36px;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:30px}.gallery-categories a{display:flex;align-items:center;gap:30px;color:var(--ink);padding:12px 0;font-size:18px}.gallery-categories a[aria-current]{color:var(--link);box-shadow:0 2px 0 var(--link)}.gallery-categories a span{color:var(--accent)}@media(max-width:760px){.gallery-categories{gap:8px 24px}.gallery-categories a{font-size:16px;gap:16px}}
+
+/* Research overview and individual bilingual project pages. */
+.research-section h2 a{color:inherit}.project-link{display:inline-block;margin-top:18px;font-size:14px}.research-detail{max-width:1240px;padding-top:40px}.research-film{margin:0 0 48px;background:#101515}.research-film video{display:block;width:100%;height:auto;aspect-ratio:960/362}.research-article{max-width:900px;margin:0 auto}.research-article .page-title{font-size:34px;line-height:1.4;margin-bottom:32px}.research-article .prose{font-size:17px;line-height:1.95}.research-back{display:inline-block;margin-top:42px;font-size:14px}@media(max-width:760px){.research-detail{padding-top:24px}.research-film{margin-bottom:30px}.research-article .page-title{font-size:27px}.research-article .prose{font-size:16px;line-height:1.85}}
+
+.research-illustration{margin:0 0 42px}.research-illustration img{display:block;width:100%;height:auto}.research-illustration figcaption{font-size:12px;color:var(--muted);text-align:right;margin-top:7px}.research-film video{pointer-events:none}
