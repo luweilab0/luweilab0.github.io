@@ -17,3 +17,4 @@
 
 .research-illustration{margin:0 0 42px}.research-illustration img{display:block;width:100%;height:auto}.research-illustration figcaption{font-size:12px;color:var(--muted);text-align:right;margin-top:7px}.research-film video{pointer-events:none}
 .research-article .inline-film{margin:34px 0 38px}
+.inline-film figcaption{background:#fff;color:var(--muted);font-size:13px;line-height:1.6;padding-top:10px;text-align:center}
