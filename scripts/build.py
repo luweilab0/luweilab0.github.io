@@ -64,7 +64,8 @@ def make(page,lang):
   media=''
   video=''
   if area.get('video'):
-   video=f'<div class="research-film inline-film"><video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="metadata" poster="{asset(area["poster"])}" width="960" height="362" aria-label="{t("research-video")}"><source src="{asset(area["video"])}" type="video/mp4"><a href="{asset(area["video"])}">{t("video-fallback")}</a></video></div>'
+   caption='某脑区大量细胞的钙活动记录' if lang=='zh' else 'Calcium activity recorded from a large population of cells within a brain region'
+   video=f'<figure class="research-film inline-film"><video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="metadata" poster="{asset(area["poster"])}" width="960" height="362" aria-label="{caption}"><source src="{asset(area["video"])}" type="video/mp4"><a href="{asset(area["video"])}">{t("video-fallback")}</a></video><figcaption>{caption}</figcaption></figure>'
   if area.get('image'):
    label='研究主题示意图' if lang=='zh' else 'Research concept illustration'
    w,h=area['image_size']
