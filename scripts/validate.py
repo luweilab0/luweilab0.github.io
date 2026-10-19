@@ -55,7 +55,10 @@ for lang in ['en','zh']:
    video=next(a for tag,a in parsed.tags if tag=='video')
    assert all(k in video for k in ['autoplay','muted','loop','playsinline','poster'])
    assert (path.parent/video['poster']).exists()
-   assert [tag for tag,a in parsed.tags].index('video')<[tag for tag,a in parsed.tags].index('h1')
+   assert 'controls' not in video
+   assert [tag for tag,a in parsed.tags].index('video')>[tag for tag,a in parsed.tags].index('h1')
+   markup=path.read_text(encoding='utf-8')
+   assert markup.index(area['paragraphs'][lang][1])<markup.index('<video')<markup.index(area['paragraphs'][lang][2])
    assert all(p in parsed.text for p in area['paragraphs'][lang])
   if area.get('image'):
    assert any(tag=='img' and (path.parent/a['src']).resolve()==ROOT/area['image'] for tag,a in parsed.tags)

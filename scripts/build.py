@@ -62,13 +62,14 @@ def make(page,lang):
  elif page in RESEARCH_PAGES:
   area=next(a for a in D['research']['areas'] if page=='research/'+a['id'])
   media=''
+  video=''
   if area.get('video'):
-   media=f'<div class="research-film"><video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="metadata" poster="{asset(area["poster"])}" width="960" height="362" aria-label="{t("research-video")}"><source src="{asset(area["video"])}" type="video/mp4"><a href="{asset(area["video"])}">{t("video-fallback")}</a></video></div>'
-  elif area.get('image'):
+   video=f'<div class="research-film inline-film"><video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="metadata" poster="{asset(area["poster"])}" width="960" height="362" aria-label="{t("research-video")}"><source src="{asset(area["video"])}" type="video/mp4"><a href="{asset(area["video"])}">{t("video-fallback")}</a></video></div>'
+  if area.get('image'):
    label='研究主题示意图' if lang=='zh' else 'Research concept illustration'
    w,h=area['image_size']
    media=f'<figure class="research-illustration"><img src="{asset(area["image"])}" alt="{ESC(v(area["title"])+" · "+label)}" width="{w}" height="{h}" loading="eager" decoding="async"><figcaption>{label}</figcaption></figure>'
-  paragraphs=''.join(f'<p>{ESC(text)}</p>' for text in area.get('paragraphs',{}).get(lang,[]))
+  paragraphs=''.join(f'<p>{ESC(text)}</p>'+(video if i==1 else '') for i,text in enumerate(area.get('paragraphs',{}).get(lang,[])))
   body=f'<main id="content" class="page research-detail">{media}<article class="research-article"><h1 class="page-title">{ESC(v(area["title"]))}</h1><div class="prose">{paragraphs}</div><a class="research-back" href="{link("research")}">← {t("research-back")}</a></article></main>'
  elif page=='members':
   groups=[]

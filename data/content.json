@@ -130,7 +130,12 @@
           ]
         },
         "video": "assets/videos/systems-mechanisms.mp4",
-        "poster": "assets/images/research/systems-mechanisms.webp"
+        "poster": "assets/images/research/systems-mechanisms.webp",
+        "image": "assets/images/research/5_systems-mechanisms.webp",
+        "image_size": [
+          1400,
+          539
+        ]
       }
     ],
     "methods": {
