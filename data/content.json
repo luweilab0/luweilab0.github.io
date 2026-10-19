@@ -42,36 +42,58 @@
     ],
     "areas": [
       {
-        "id": "synapses",
+        "id": "targets-and-drug-development",
         "title": {
-          "zh": "GABA 能突触的发育与传递",
-          "en": "GABAergic synapse development and transmission"
+          "zh": "新型 GABAᴀ 受体辅助亚基与分子靶点：功能解析及药物开发",
+          "en": "Novel GABAᴀ receptor auxiliary subunits and molecular targets: functional characterization and drug development"
         },
         "text": {
-          "zh": "研究调控 GABA 能突触发育与传递的分子机制，以及这些机制在动物行为和神经疾病中的作用。",
-          "en": "We investigate the molecular mechanisms that regulate GABAergic synapse development and transmission, and their roles in animal behavior and neurological disorders."
+          "zh": "鉴定和表征新型 GABAᴀ 受体辅助亚基，解析其功能，并基于实验室发现的新型分子靶点开展转化研究与药物开发。",
+          "en": "We identify and characterize novel GABAᴀ receptor auxiliary subunits, investigate their functions, and pursue translational research and drug development based on new molecular targets discovered in the laboratory."
         }
       },
       {
-        "id": "receptors",
+        "id": "understudied-subunits",
         "title": {
-          "zh": "GABAᴀ 受体辅助亚基与精神药理学",
-          "en": "GABAᴀ receptor auxiliary subunits and psychopharmacology"
+          "zh": "研究不足的 GABAᴀ 受体亚基的功能与机制",
+          "en": "Functions and mechanisms of understudied GABAᴀ receptor subunits"
         },
         "text": {
-          "zh": "鉴定和研究新型 GABAᴀ 受体辅助亚基，探索 GABAᴀ 受体精神药理学，为靶向受体的脑疾病治疗策略提供依据。",
-          "en": "We identify and investigate novel GABAᴀ receptor auxiliary subunits and study GABAᴀ receptor psychopharmacology to inform receptor-targeted approaches to brain disorders."
+          "zh": "研究尚未得到充分探索的 GABAᴀ 受体亚基，阐明其功能及相关机制。",
+          "en": "We investigate understudied GABAᴀ receptor subunits to elucidate their functions and underlying mechanisms."
         }
       },
       {
-        "id": "anesthesia",
+        "id": "immune-regulation",
         "title": {
-          "zh": "麻醉与意识",
-          "en": "Anesthesia and consciousness"
+          "zh": "免疫分子对突触与神经元功能的调控",
+          "en": "Immune regulation of synaptic and neuronal function"
         },
         "text": {
-          "zh": "研究麻醉和意识的分子与神经环路机制，理解抑制性信号如何参与脑状态调控。",
-          "en": "We study the molecular and neural circuit mechanisms of anesthesia and consciousness, exploring how inhibitory signaling contributes to the regulation of brain states."
+          "zh": "研究免疫分子如何调节突触与神经元功能，探索其作用机制。",
+          "en": "We study how immune molecules regulate synaptic and neuronal function and investigate the mechanisms involved."
+        }
+      },
+      {
+        "id": "psychopharmacology",
+        "title": {
+          "zh": "GABAᴀ 受体精神药理作用的神经环路机制",
+          "en": "Neural circuit mechanisms of GABAᴀ receptor psychopharmacology"
+        },
+        "text": {
+          "zh": "研究调节 GABAᴀ 受体精神药理作用的神经环路及其机制。",
+          "en": "We investigate the neural circuits and mechanisms that regulate GABAᴀ receptor psychopharmacology."
+        }
+      },
+      {
+        "id": "brain-systems",
+        "title": {
+          "zh": "大脑基本功能的系统机制",
+          "en": "Systems mechanisms underlying fundamental brain functions"
+        },
+        "text": {
+          "zh": "从系统层面研究大脑基本功能及其机制。",
+          "en": "We investigate the mechanisms underlying fundamental brain functions at the systems level."
         }
       }
     ],
