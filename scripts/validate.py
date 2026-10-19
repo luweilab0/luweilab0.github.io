@@ -44,6 +44,21 @@ for css in (ROOT/'assets').glob('*.css'):
  for source in re.findall(r'url\([\'\"]?([^\)\'\"]+)',text):
   if not source.startswith(('data:','http')) and not (css.parent/source).exists():errors.append(f'CSS missing asset: {source}')
 people=json.loads((ROOT/'data/people.json').read_text(encoding='utf-8'))
+research=json.loads((ROOT/'data/content.json').read_text(encoding='utf-8'))['research']['areas']
+for lang in ['en','zh']:
+ base=ROOT/('zh' if lang=='zh' else '')/'research'
+ for area in research:
+  path=base/area['id']/'index.html'
+  assert path in pages, f'Missing research detail: {path}'
+  parsed=pages[path]
+  if area.get('video'):
+   video=next(a for tag,a in parsed.tags if tag=='video')
+   assert all(k in video for k in ['autoplay','muted','loop','playsinline','poster'])
+   assert (path.parent/video['poster']).exists()
+   assert [tag for tag,a in parsed.tags].index('video')<[tag for tag,a in parsed.tags].index('h1')
+   assert all(p in parsed.text for p in area['paragraphs'][lang])
+  if area.get('image'):
+   assert any(tag=='img' and (path.parent/a['src']).resolve()==ROOT/area['image'] for tag,a in parsed.tags)
 assert len(people)==19
 assert next(i for i,p in enumerate(people) if p['group']=='Associate Researcher')<next(i for i,p in enumerate(people) if p['group']=='Assistant Researcher')
 assert len([p for p in people if p['photo']])==18

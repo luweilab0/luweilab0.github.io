@@ -50,7 +50,12 @@
         "text": {
           "zh": "鉴定和表征新型 GABAᴀ 受体辅助亚基，解析其功能，并基于实验室发现的新型分子靶点开展转化研究与药物开发。",
           "en": "We identify and characterize novel GABAᴀ receptor auxiliary subunits, investigate their functions, and pursue translational research and drug development based on new molecular targets discovered in the laboratory."
-        }
+        },
+        "image": "assets/images/research/1_targets.webp",
+        "image_size": [
+          1400,
+          540
+        ]
       },
       {
         "id": "understudied-subunits",
@@ -61,7 +66,12 @@
         "text": {
           "zh": "研究尚未得到充分探索的 GABAᴀ 受体亚基，阐明其功能及相关机制。",
           "en": "We investigate understudied GABAᴀ receptor subunits to elucidate their functions and underlying mechanisms."
-        }
+        },
+        "image": "assets/images/research/2_subunits.webp",
+        "image_size": [
+          1400,
+          539
+        ]
       },
       {
         "id": "immune-regulation",
@@ -72,7 +82,12 @@
         "text": {
           "zh": "研究免疫分子如何调节突触与神经元功能，探索其作用机制。",
           "en": "We study how immune molecules regulate synaptic and neuronal function and investigate the mechanisms involved."
-        }
+        },
+        "image": "assets/images/research/3_immune.webp",
+        "image_size": [
+          1400,
+          539
+        ]
       },
       {
         "id": "psychopharmacology",
@@ -83,7 +98,12 @@
         "text": {
           "zh": "研究调节 GABAᴀ 受体精神药理作用的神经环路及其机制。",
           "en": "We investigate the neural circuits and mechanisms that regulate GABAᴀ receptor psychopharmacology."
-        }
+        },
+        "image": "assets/images/research/4_circuits.webp",
+        "image_size": [
+          1400,
+          539
+        ]
       },
       {
         "id": "brain-systems",
@@ -94,7 +114,23 @@
         "text": {
           "zh": "从系统层面研究大脑基本功能及其机制。",
           "en": "We investigate the mechanisms underlying fundamental brain functions at the systems level."
-        }
+        },
+        "paragraphs": {
+          "zh": [
+            "大脑如何感知世界、积累经验，并根据内部需求灵活选择行动？我们从系统神经科学的视角研究感知、学习记忆、动机与决策等核心脑功能，关注这些功能如何由神经元群体的协同活动及跨脑区交互产生。研究聚焦介观尺度，将单细胞分辨率的活动观察与局部网络、跨脑区环路的组织和动态联系起来，理解神经活动如何转化为认知与行为。",
+            "好奇驱动的探索和社会互动为研究这些问题提供了重要场景。我们关注个体如何主动获取新信息、形成和更新环境表征，以及如何感知自身、他者及其相对空间关系。通过研究探索动机、环境信息与社会空间信息的编码和整合，我们希望揭示大脑如何利用经验和当前情境，引导接近、探索与其他适应性行为选择。",
+            "在实验上，我们将结合可量化的行为任务与精细的运动和互动追踪，建立探索动机和社会空间行为的测量体系，并区分信息寻求与运动、唤醒及外部奖赏等因素的影响。依托海马空间编码、基底节运动规划和神经群体研究基础，运用微型显微钙成像与高通量电生理记录，在行为过程中观察局部神经元群体及多个脑区的活动，并结合光遗传干预检验特定细胞群和环路在行为中的因果作用。",
+            "在分析上，我们将结合神经编码与解码、群体活动降维、状态空间建模及跨脑区统计耦合分析，追踪行为相关表征如何形成、随时间演化并参与行为选择。通过联合分析神经活动与行为，并将记录结果与因果干预相互验证，我们希望理解局部群体计算与跨脑区协同如何共同支持大脑的核心功能，为进一步研究认知与社会行为异常提供机制基础。"
+          ],
+          "en": [
+            "How does the brain perceive the world, learn from experience, and flexibly select actions according to internal needs? We take a systems neuroscience approach to fundamental brain functions, including perception, learning and memory, motivation, and decision-making. Our focus is on how these functions emerge from coordinated neuronal population activity and interactions across brain regions. At the mesoscale, we link cellular-resolution observations to the organization and dynamics of local networks and distributed circuits to understand how neural activity gives rise to cognition and behavior.",
+            "Curiosity-driven exploration and social interaction provide important contexts for addressing these questions. We investigate how individuals actively acquire new information, build and update representations of their environment, and encode the positions of themselves and others and their relative spatial relationships. By studying how exploratory motivation, environmental cues, and social spatial information are represented and integrated, we aim to understand how experience and context guide approach, exploration, and other adaptive behavioral choices.",
+            "Experimentally, we will combine quantitative behavioral tasks with detailed tracking of movement and interaction to measure exploratory motivation and social spatial behavior, while distinguishing information seeking from the effects of movement, arousal, and external reward. Building on our experience in hippocampal spatial coding, basal ganglia motor planning, and neuronal population analysis, we will use miniature calcium imaging and high-throughput electrophysiology to observe local population activity and activity across brain regions during behavior. Optogenetic perturbations will help establish the causal contributions of specific cell populations and circuits.",
+            "Our analyses will combine neural encoding and decoding, dimensionality reduction, state-space modeling, and statistical analyses of interregional coupling to track how behaviorally relevant representations form, evolve, and contribute to action selection. By integrating neural and behavioral measurements with causal perturbations, we aim to reveal how local population computations and coordination across brain regions support fundamental brain functions, providing a mechanistic foundation for investigating disruptions of cognition and social behavior."
+          ]
+        },
+        "video": "assets/videos/systems-mechanisms.mp4",
+        "poster": "assets/images/research/systems-mechanisms.webp"
       }
     ],
     "methods": {

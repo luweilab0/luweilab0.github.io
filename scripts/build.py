@@ -13,7 +13,10 @@ NAV=['research','members','media','publications','gallery','join','contact']
 LABELS.update({'environment':('研究环境','Research environment'),'methods':('研究方法','Research methods'),'application':('申请材料','Application materials'),'apply':('申请方式','How to apply'),'recruitment':('招聘咨询','Recruitment inquiries'),'academic':('学术联系','Academic inquiries'),'notes':('其他说明','Additional information')})
 LABELS.update({'gallery/facilities':('实验环境与设备','Laboratory & Equipment'),'gallery/life':('实验室生活','Life in the Lab')})
 GALLERY_PAGES=['gallery/facilities','gallery/life']
-PAGES=['home']+NAV+['wei-lu','404']+GALLERY_PAGES
+RESEARCH_PAGES=['research/'+a['id'] for a in D['research']['areas']]
+LABELS.update({'research/'+a['id']:(a['title']['zh'],a['title']['en']) for a in D['research']['areas']})
+LABELS.update({'research-back':('所有研究方向','All research areas'),'read-project':('了解研究项目','Explore this project'),'research-video':('神经活动成像视频','Neural activity imaging video'),'video-fallback':('下载视频','Download video')})
+PAGES=['home']+NAV+['wei-lu','404']+GALLERY_PAGES+RESEARCH_PAGES
 
 def route(page,lang):
  prefix='zh/' if lang=='zh' else ''
@@ -38,10 +41,10 @@ def make(page,lang):
   return f'<article class="person {"principal" if pi else ""}" id="{p["id"]}">{img(p,pi)}<h3>{name}</h3><p class="role">{ESC(v(D["pi"]["title"]) if pi else v(p["role"]))}</p>{email(p)}'+(f'<a class="profile-link" href="{link("wei-lu")}">{t("profile")} <span aria-hidden="true">→</span></a>' if pi else '')+'</article>'
  nav=''
  for n in NAV:
-  active=' aria-current="page"' if n==page or (page=='wei-lu' and n=='members') or (page in GALLERY_PAGES and n=='gallery') else ''
+  active=' aria-current="page"' if n==page or (page=='wei-lu' and n=='members') or (page in GALLERY_PAGES and n=='gallery') or (page in RESEARCH_PAGES and n=='research') else ''
   sub=''
   if n in ['research','members','gallery']:
-   entries=[(link('research')+'#'+a['id'],v(a['title'])) for a in D['research']['areas']] if n=='research' else [(link('wei-lu'),t('wei-lu')),(link('members'),t('members'))]
+   entries=[(link('research/'+a['id']),v(a['title'])) for a in D['research']['areas']] if n=='research' else [(link('wei-lu'),t('wei-lu')),(link('members'),t('members'))]
    if n=='gallery':entries=[(link(g),t(g)) for g in GALLERY_PAGES]
    sub=f'<button class="sub-toggle" aria-expanded="false" aria-controls="sub-{n}" aria-label="{t("subnav")} · {t(n)}"><span aria-hidden="true">⌄</span></button><ul class="submenu" id="sub-{n}">' + ''.join(f'<li><a href="{u}">{ESC(s)}</a></li>' for u,s in entries)+'</ul>'
   nav+=f'<li class="nav-item"><a href="{link(n)}"{active}>{t(n)}</a>{sub}</li>'
@@ -53,9 +56,20 @@ def make(page,lang):
   body=f'<main id="content" class="home-main"><div class="hero-copy"><h1>{v(D["home"]["title"])}</h1><p>{v(D["home"]["intro"])}</p><a class="outline-button" href="{link("research")}">{v(D["home"]["button"])}</a></div></main>'
  elif page=='research':
   paragraphs=''.join(f'<p>{ESC(v(p))}</p>' for p in D['research']['intro'])+f'<h2>{t("methods")}</h2><p>{ESC(v(D["research"]["methods"]))}</p>'
-  aside=f'<aside class="research-aside"><h2>{t("areas")}</h2><ul>'+''.join(f'<li><a href="#{a["id"]}">{ESC(v(a["title"]))}</a></li>' for a in D['research']['areas'])+'</ul></aside>'
-  sections=''.join(f'<section class="research-section" id="{a["id"]}"><span class="section-number" aria-hidden="true">0{i+1}</span><div><h2>{ESC(v(a["title"]))}</h2><p>{ESC(v(a["text"]))}</p></div></section>' for i,a in enumerate(D['research']['areas']))
+  aside=f'<aside class="research-aside"><h2>{t("areas")}</h2><ul>'+''.join(f'<li><a href="{link('research/'+a["id"])}">{ESC(v(a["title"]))}</a></li>' for a in D['research']['areas'])+'</ul></aside>'
+  sections=''.join(f'<section class="research-section" id="{a["id"]}"><span class="section-number" aria-hidden="true">0{i+1}</span><div><h2><a href="{link('research/'+a["id"])}">{ESC(v(a["title"]))}</a></h2><p>{ESC(v(a["text"]))}</p><a class="project-link" href="{link('research/'+a["id"])}">{t("read-project")} <span aria-hidden="true">→</span></a></div></section>' for i,a in enumerate(D['research']['areas']))
   body=f'<main id="content" class="page research-page"><h1 class="page-title">{t(page)}</h1><div class="research-overview"><div class="prose">{paragraphs}</div>{aside}</div><div class="research-sections">{sections}</div></main>'
+ elif page in RESEARCH_PAGES:
+  area=next(a for a in D['research']['areas'] if page=='research/'+a['id'])
+  media=''
+  if area.get('video'):
+   media=f'<div class="research-film"><video autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="metadata" poster="{asset(area["poster"])}" width="960" height="362" aria-label="{t("research-video")}"><source src="{asset(area["video"])}" type="video/mp4"><a href="{asset(area["video"])}">{t("video-fallback")}</a></video></div>'
+  elif area.get('image'):
+   label='研究主题示意图' if lang=='zh' else 'Research concept illustration'
+   w,h=area['image_size']
+   media=f'<figure class="research-illustration"><img src="{asset(area["image"])}" alt="{ESC(v(area["title"])+" · "+label)}" width="{w}" height="{h}" loading="eager" decoding="async"><figcaption>{label}</figcaption></figure>'
+  paragraphs=''.join(f'<p>{ESC(text)}</p>' for text in area.get('paragraphs',{}).get(lang,[]))
+  body=f'<main id="content" class="page research-detail">{media}<article class="research-article"><h1 class="page-title">{ESC(v(area["title"]))}</h1><div class="prose">{paragraphs}</div><a class="research-back" href="{link("research")}">← {t("research-back")}</a></article></main>'
  elif page=='members':
   groups=[]
   for p in PEOPLE[1:]:
@@ -97,7 +111,7 @@ def make(page,lang):
   body=f'<main id="content" class="page"><h1 class="page-title">{t(page)}</h1><div class="contact-layout"><div><h2>{t("wei-lu")}</h2><p class="contact-role">{v(D["pi"]["title"])}</p><dl><dt>{t("academic")}</dt><dd><a href="mailto:{D["contact"]["email"]}">{D["contact"]["email"]}</a></dd><dt>{t("recruitment")}</dt><dd><a href="mailto:{D["contact"]["hiring_email"]}">{D["contact"]["hiring_email"]}</a><br><a class="profile-link" href="{link("join")}">{t("apply")} →</a></dd><dt>{t("address")}</dt><dd>{v(D["institute"])}<br>{v(D["lab_name"])}<br>{v(D["contact"]["address"])}</dd><dt>{t("phone")}</dt><dd class="empty-field">{D["contact"]["phone"]}</dd><dt>{t("room")}</dt><dd class="empty-field">{D["contact"]["room"]}</dd></dl></div><img class="contact-campus" src="{asset('assets/images/contact/smart-campus-1400.webp')}" alt="{'深圳医学科学院园区效果图' if lang=='zh' else 'Architectural rendering of the SMART campus'}" width="1200" height="675" loading="eager" decoding="async"></div></main>'
  else:
   body=f'<main id="content" class="page blank-page"><h1 class="page-title">{t("notfound")}</h1><p>{t("notfoundtext")}</p><a class="text-button" href="{link("home")}">{t("returnhome")}</a></main>'
- desc=v(D['home']['intro'])
+ desc=v(area['text']) if page in RESEARCH_PAGES else v(D['home']['intro'])
  alternate=''.join(f'<link rel="alternate" hreflang="{l}" href="https://luweilab.com/{route(page,"zh" if l=="zh-CN" else "en").replace("index.html","")}">' for l in ['en','zh-CN','x-default'])
  preload=f'<link rel="preload" as="image" href="{asset("assets/images/backgrounds/home-neurons.webp")}" media="(min-width: 761px)"><link rel="preload" as="image" href="{asset("assets/images/backgrounds/home-neurons-mobile.webp")}" media="(max-width: 760px)">' if page=='home' else ''
  doc=f'''<!doctype html>
