@@ -108,7 +108,7 @@ def make(page,lang):
   if page=='gallery/life':
    for a in ALBUMS:
     photos=''.join(f'<figure class="album-photo"><a href="{asset(p["src"])}" target="_blank" rel="noopener"><img src="{asset(p["src"])}" alt="{ESC(v(p["caption"]))}" width="{p["width"]}" height="{p["height"]}" loading="{"eager" if i==0 and a==ALBUMS[0] else "lazy"}" decoding="async"></a><figcaption>{ESC(v(p["caption"]))}</figcaption></figure>' for i,p in enumerate(a['photos']))
-    entries+=f'<section class="life-event" id="{a["id"]}"><header class="event-heading"><time datetime="{a["date"]}">{a["date"].replace("-",".")}</time><h2>{ESC(v(a["title"]))}</h2></header><div class="album-grid">{photos}</div></section>'
+    entries+=f'<section class="life-event" id="{a["id"]}"><header class="event-heading"><time datetime="{a["date"]}">{a["date"].replace("-",".")}</time> <span class="event-location">· {ESC(v(a["location"]))}</span><h2>{ESC(v(a["title"]))}</h2></header><div class="album-grid">{photos}</div></section>'
   body=f'<main id="content" class="page {"blank-page" if not entries else "life-page"}"><h1 class="page-title">{t(page)}</h1>{tabs}{entries if entries else "<div class=reserved-content></div>"}</main>'
  elif page=='media':
   body=f'<main id="content" class="page blank-page"><h1 class="page-title">{t(page)}</h1><div class="reserved-content"></div></main>'

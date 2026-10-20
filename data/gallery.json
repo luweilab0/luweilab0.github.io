@@ -2,14 +2,17 @@
   {
     "id": "2026-01-10-inc-annual-retrat-2025",
     "date": "2026-01-10",
+    "location": {
+      "zh": "深圳",
+      "en": "Shenzhen"
+    },
     "title": {
       "zh": "INC Annual Retrat 2025",
       "en": "INC Annual Retrat 2025"
     },
-    "cover": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/cover.webp",
     "photos": [
       {
-        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/01.webp",
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/01-6d1ee082.webp",
         "width": 1600,
         "height": 1067,
         "caption": {
@@ -18,7 +21,7 @@
         }
       },
       {
-        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/02.webp",
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/02-6b0edce3.webp",
         "width": 1067,
         "height": 1600,
         "caption": {
@@ -36,7 +39,7 @@
         }
       },
       {
-        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/04.webp",
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/04-3a599fce.webp",
         "width": 1600,
         "height": 1067,
         "caption": {
@@ -51,6 +54,180 @@
         "caption": {
           "zh": "罗梦浔博士提问",
           "en": "Dr. Mengxun Luo asking a question"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2026-01-30-smart-annual-gala",
+    "date": "2026-01-30",
+    "location": {
+      "zh": "深圳",
+      "en": "Shenzhen"
+    },
+    "title": {
+      "zh": "深圳医学科学院年度晚会",
+      "en": "SMART Annual Gala"
+    },
+    "photos": [
+      {
+        "src": "assets/images/gallery/2026-01-30-smart-annual-gala/01-8e37a6b0.webp",
+        "width": 1179,
+        "height": 777,
+        "caption": {
+          "zh": "陆伟教授给获奖者颁奖",
+          "en": "Professor Wei Lu presenting awards"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-01-30-smart-annual-gala/02-ae3f0dde.webp",
+        "width": 1179,
+        "height": 781,
+        "caption": {
+          "zh": "实验室全体合影",
+          "en": "Lab group photo"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2026-03-16-roger-nicoll-visit",
+    "date": "2026-03-16",
+    "location": {
+      "zh": "深圳",
+      "en": "Shenzhen"
+    },
+    "title": {
+      "zh": "Roger Nicoll教授来访",
+      "en": "Visit by Professor Roger Nicoll"
+    },
+    "photos": [
+      {
+        "src": "assets/images/gallery/2026-03-16-roger-nicoll-visit/01-2a89d8e3.webp",
+        "width": 1600,
+        "height": 1200,
+        "caption": {
+          "zh": "Roger Nicoll教授与陆伟教授讨论科学问题",
+          "en": "Professors Roger Nicoll and Wei Lu discussing scientific questions"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-03-16-roger-nicoll-visit/02-ae8bd365.webp",
+        "width": 1600,
+        "height": 1200,
+        "caption": {
+          "zh": "Roger Nicoll教授与陆伟教授听取大家的发言",
+          "en": "Professors Roger Nicoll and Wei Lu listening to participants"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2026-08-10-xiaohui-liang-study-visit",
+    "date": "2026-08-10",
+    "location": {
+      "zh": "深圳",
+      "en": "Shenzhen"
+    },
+    "title": {
+      "zh": "梁萧慧同学研学",
+      "en": "Xiaohui Liang’s Study Visit"
+    },
+    "photos": [
+      {
+        "src": "assets/images/gallery/2026-08-10-xiaohui-liang-study-visit/01-65d9dc30.webp",
+        "width": 1600,
+        "height": 1205,
+        "caption": {
+          "zh": "梁萧慧展示研学收获后实验室合影",
+          "en": "Lab group photo after Xiaohui Liang’s presentation on the study visit"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2026-09-11-neuroscience-annual-meeting",
+    "date": "2026-09-11",
+    "location": {
+      "zh": "福州",
+      "en": "Fuzhou"
+    },
+    "title": {
+      "zh": "实验室部分成员参加中国神经科学年会",
+      "en": "Lab Members at the Chinese Neuroscience Society Annual Meeting"
+    },
+    "photos": [
+      {
+        "src": "assets/images/gallery/2026-09-11-neuroscience-annual-meeting/01-b8650115.webp",
+        "width": 1600,
+        "height": 1200,
+        "caption": {
+          "zh": "参加年会的成员合影",
+          "en": "Group photo of lab members attending the annual meeting"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2026-09-14-teachers-day",
+    "date": "2026-09-14",
+    "location": {
+      "zh": "深圳",
+      "en": "Shenzhen"
+    },
+    "title": {
+      "zh": "给陆老师庆祝教师节",
+      "en": "Teachers’ Day Celebration for Professor Wei Lu"
+    },
+    "photos": [
+      {
+        "src": "assets/images/gallery/2026-09-14-teachers-day/01-e5fdf16d.webp",
+        "width": 1179,
+        "height": 881,
+        "caption": {
+          "zh": "陆伟教授切蛋糕",
+          "en": "Professor Wei Lu cutting the cake"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-09-14-teachers-day/02-1ce8d2cf.webp",
+        "width": 1200,
+        "height": 1600,
+        "caption": {
+          "zh": "陆伟教授分蛋糕",
+          "en": "Professor Wei Lu serving cake"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-09-14-teachers-day/03-d0d23d20.webp",
+        "width": 1179,
+        "height": 877,
+        "caption": {
+          "zh": "集体合影",
+          "en": "Group photo"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2026-09-25-mid-autumn-dinner",
+    "date": "2026-09-25",
+    "location": {
+      "zh": "深圳",
+      "en": "Shenzhen"
+    },
+    "title": {
+      "zh": "实验室中秋节聚餐",
+      "en": "Lab Mid-Autumn Festival Dinner"
+    },
+    "photos": [
+      {
+        "src": "assets/images/gallery/2026-09-25-mid-autumn-dinner/01-047f5619.webp",
+        "width": 1179,
+        "height": 889,
+        "caption": {
+          "zh": "实验室合影",
+          "en": "Lab group photo"
         }
       }
     ]
