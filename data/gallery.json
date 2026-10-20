@@ -208,28 +208,5 @@
         }
       }
     ]
-  },
-  {
-    "id": "2026-09-25-mid-autumn-dinner",
-    "date": "2026-09-25",
-    "location": {
-      "zh": "深圳",
-      "en": "Shenzhen"
-    },
-    "title": {
-      "zh": "实验室中秋节聚餐",
-      "en": "Lab Mid-Autumn Festival Dinner"
-    },
-    "photos": [
-      {
-        "src": "assets/images/gallery/2026-09-25-mid-autumn-dinner/01-047f5619.webp",
-        "width": 1179,
-        "height": 889,
-        "caption": {
-          "zh": "实验室合影",
-          "en": "Lab group photo"
-        }
-      }
-    ]
   }
 ]
