@@ -27,9 +27,9 @@
         }
       },
       {
-        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/03.webp",
-        "width": 1600,
-        "height": 1200,
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/03-cdabd418.webp",
+        "width": 1066,
+        "height": 1600,
         "caption": {
           "zh": "罗梦浔博士作报告",
           "en": "Presentation by Dr. Mengxun Luo"
@@ -42,6 +42,15 @@
         "caption": {
           "zh": "阳弘江博士作报告",
           "en": "Presentation by Dr. Hongjiang Yang"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/05-6c2a3fcf.webp",
+        "width": 1600,
+        "height": 1066,
+        "caption": {
+          "zh": "罗梦浔博士提问",
+          "en": "Dr. Mengxun Luo asking a question"
         }
       }
     ]
