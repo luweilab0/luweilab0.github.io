@@ -13,6 +13,9 @@ NAV=['research','members','media','publications','gallery','join','contact']
 LABELS.update({'environment':('研究环境','Research environment'),'methods':('研究方法','Research methods'),'application':('申请材料','Application materials'),'apply':('申请方式','How to apply'),'recruitment':('招聘咨询','Recruitment inquiries'),'academic':('学术联系','Academic inquiries'),'notes':('其他说明','Additional information')})
 LABELS.update({'gallery/facilities':('实验环境与设备','Laboratory & Equipment'),'gallery/life':('实验室生活','Life in the Lab')})
 GALLERY_PAGES=['gallery/facilities','gallery/life']
+ALBUMS=sorted(json.loads((ROOT/'data/gallery.json').read_text(encoding='utf-8')),key=lambda a:a['date'],reverse=True)
+LABELS.update({'gallery/life/'+a['id']:(a['title']['zh'],a['title']['en']) for a in ALBUMS})
+LABELS.update({'album-open':('查看活动相册','View event album'),'album-back':('返回实验室生活','Back to Life in the Lab'),'album-full':('点击照片查看大图','Select a photo to view it at full size'),'album-photos':('张照片','photos')})
 RESEARCH_PAGES=['research/'+a['id'] for a in D['research']['areas']]
 LABELS.update({'research/'+a['id']:(a['title']['zh'],a['title']['en']) for a in D['research']['areas']})
 LABELS.update({'research-back':('所有研究方向','All research areas'),'read-project':('了解研究项目','Explore this project'),'research-video':('神经活动成像视频','Neural activity imaging video'),'video-fallback':('下载视频','Download video')})
@@ -101,7 +104,12 @@ def make(page,lang):
   body=f'<main id="content" class="page"><h1 class="page-title">{t(page)}</h1><p class="section-caption">{t("papers")}</p>{controls}<div class="publications-layout"><div>{sections}<p id="no-results" hidden>{t("empty")}</p></div>{yearlinks}</div></main>'
  elif page=='gallery' or page in GALLERY_PAGES:
   tabs=f'<nav class="gallery-categories" aria-label="{t("gallery")}">'+''.join(f'<a href="{link(g)}"'+(' aria-current="page"' if page==g else '')+f'>{t(g)} <span aria-hidden="true">→</span></a>' for g in GALLERY_PAGES)+'</nav>'
-  body=f'<main id="content" class="page blank-page"><h1 class="page-title">{t(page)}</h1>{tabs}<div class="reserved-content"></div></main>'
+  entries=''
+  if page=='gallery/life':
+   for a in ALBUMS:
+    photos=''.join(f'<figure class="album-photo"><a href="{asset(p["src"])}" target="_blank" rel="noopener"><img src="{asset(p["src"])}" alt="{ESC(v(p["caption"]))}" width="{p["width"]}" height="{p["height"]}" loading="{"eager" if i==0 and a==ALBUMS[0] else "lazy"}" decoding="async"></a><figcaption>{ESC(v(p["caption"]))}</figcaption></figure>' for i,p in enumerate(a['photos']))
+    entries+=f'<section class="life-event" id="{a["id"]}"><header class="event-heading"><time datetime="{a["date"]}">{a["date"].replace("-",".")}</time><h2>{ESC(v(a["title"]))}</h2></header><div class="album-grid">{photos}</div></section>'
+  body=f'<main id="content" class="page {"blank-page" if not entries else "life-page"}"><h1 class="page-title">{t(page)}</h1>{tabs}{entries if entries else "<div class=reserved-content></div>"}</main>'
  elif page=='media':
   body=f'<main id="content" class="page blank-page"><h1 class="page-title">{t(page)}</h1><div class="reserved-content"></div></main>'
  elif page=='join':

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "2026-01-10-inc-annual-retrat-2025",
+    "date": "2026-01-10",
+    "title": {
+      "zh": "INC Annual Retrat 2025",
+      "en": "INC Annual Retrat 2025"
+    },
+    "cover": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/cover.webp",
+    "photos": [
+      {
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/01.webp",
+        "width": 1600,
+        "height": 1067,
+        "caption": {
+          "zh": "实验室全体合影",
+          "en": "Lab group photo"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/02.webp",
+        "width": 1067,
+        "height": 1600,
+        "caption": {
+          "zh": "陆伟教授听取报告",
+          "en": "Professor Wei Lu attending a presentation"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/03.webp",
+        "width": 1600,
+        "height": 1200,
+        "caption": {
+          "zh": "罗梦浔博士作报告",
+          "en": "Presentation by Dr. Mengxun Luo"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/04.webp",
+        "width": 1600,
+        "height": 1067,
+        "caption": {
+          "zh": "阳弘江博士作报告",
+          "en": "Presentation by Dr. Hongjiang Yang"
+        }
+      }
+    ]
+  }
+]
