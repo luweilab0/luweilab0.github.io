@@ -40,3 +40,4 @@
               linear-gradient(115deg, #103f43, #21595c);
   pointer-events: none;
 }
+.home .site-footer a { color: inherit; }

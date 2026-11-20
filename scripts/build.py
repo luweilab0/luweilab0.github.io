@@ -53,7 +53,10 @@ def make(page,lang):
   nav+=f'<li class="nav-item"><a href="{link(n)}"{active}>{t(n)}</a>{sub}</li>'
  language=f'<div class="language-switch" role="group" aria-label="{t("language")}"><a href="{link(page,"zh")}" lang="zh-CN" hreflang="zh-CN" data-language="zh" {"aria-current=\"true\"" if lang=="zh" else ""}>中文</a><span aria-hidden="true">/</span><a href="{link(page,"en")}" lang="en" hreflang="en" data-language="en" {"aria-current=\"true\"" if lang=="en" else ""}>EN</a></div>'
  header=f'<header class="site-header"><div class="header-inner"><a class="brand" href="{link("home")}">{v(D["brand"])}</a><nav id="main-nav" aria-label="{t("nav")}"><ul class="nav-list">{nav}</ul></nav>{language}<button class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="{t("menu")}" data-open="{t("menu")}" data-close="{t("close")}"><span></span><span></span><span></span></button></div></header>'
- footer=f'<footer class="site-footer"><span>© 2026 {v(D["brand"])}</span><span>{v(D["institute"])}</span></footer>'
+ institute=ESC(v(D["institute"]))
+ if page=='home':
+  institute=f'<a href="https://smart.org.cn/">{institute}</a>'
+ footer=f'<footer class="site-footer"><span>© 2026 {v(D["brand"])}</span><span>{institute}</span></footer>'
  body=''
  if page=='home':
   body=f'<main id="content" class="home-main"><div class="hero-copy"><h1>{v(D["home"]["title"])}</h1><p>{v(D["home"]["intro"])}</p><a class="outline-button" href="{link("research")}">{v(D["home"]["button"])}</a></div></main>'
