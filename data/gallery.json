@@ -30,7 +30,16 @@
         }
       },
       {
-        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/03-cdabd418.webp",
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/03-541be9fb.webp",
+        "width": 1600,
+        "height": 1066,
+        "caption": {
+          "zh": "陆伟教授发言",
+          "en": "Professor Wei Lu speaking"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/04-cdabd418.webp",
         "width": 1066,
         "height": 1600,
         "caption": {
@@ -39,7 +48,7 @@
         }
       },
       {
-        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/04-3a599fce.webp",
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/05-3a599fce.webp",
         "width": 1600,
         "height": 1067,
         "caption": {
@@ -48,7 +57,7 @@
         }
       },
       {
-        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/05-6c2a3fcf.webp",
+        "src": "assets/images/gallery/2026-01-10-inc-annual-retrat-2025/06-6c2a3fcf.webp",
         "width": 1600,
         "height": 1066,
         "caption": {
@@ -103,21 +112,21 @@
     },
     "photos": [
       {
-        "src": "assets/images/gallery/2026-03-16-roger-nicoll-visit/01-2a89d8e3.webp",
-        "width": 1600,
-        "height": 1200,
+        "src": "assets/images/gallery/2026-03-16-roger-nicoll-visit/01-4bd740a5.webp",
+        "width": 1280,
+        "height": 960,
         "caption": {
           "zh": "Roger Nicoll教授与陆伟教授讨论科学问题",
           "en": "Professors Roger Nicoll and Wei Lu discussing scientific questions"
         }
       },
       {
-        "src": "assets/images/gallery/2026-03-16-roger-nicoll-visit/02-ae8bd365.webp",
+        "src": "assets/images/gallery/2026-03-16-roger-nicoll-visit/02-23c2e9f1.webp",
         "width": 1600,
         "height": 1200,
         "caption": {
-          "zh": "Roger Nicoll教授与陆伟教授听取大家的发言",
-          "en": "Professors Roger Nicoll and Wei Lu listening to participants"
+          "zh": "Roger Nicoll教授与大家合影",
+          "en": "Group photo with Professor Roger Nicoll"
         }
       }
     ]
@@ -205,6 +214,38 @@
         "caption": {
           "zh": "集体合影",
           "en": "Group photo"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2025-09-25-cns-annual-meeting",
+    "date": "2025-09-25",
+    "location": {
+      "zh": "西安",
+      "en": "Xi’an"
+    },
+    "title": {
+      "zh": "参加中国神经科学学会第十八届全国学术会议",
+      "en": "The 18th Annual Meeting of Chinese Neuroscience Society"
+    },
+    "photos": [
+      {
+        "src": "assets/images/gallery/2025-09-25-cns-annual-meeting/01-3cbb54f3.webp",
+        "width": 1600,
+        "height": 1064,
+        "caption": {
+          "zh": "陆伟教授",
+          "en": "Professor Wei Lu"
+        }
+      },
+      {
+        "src": "assets/images/gallery/2025-09-25-cns-annual-meeting/02-ea15662b.webp",
+        "width": 1200,
+        "height": 1600,
+        "caption": {
+          "zh": "参加会议的实验室成员",
+          "en": "Lab members attending the meeting"
         }
       }
     ]

@@ -58,7 +58,7 @@ def make(page,lang):
  if page=='home':
   body=f'<main id="content" class="home-main"><div class="hero-copy"><h1>{v(D["home"]["title"])}</h1><p>{v(D["home"]["intro"])}</p><a class="outline-button" href="{link("research")}">{v(D["home"]["button"])}</a></div></main>'
  elif page=='research':
-  paragraphs=''.join(f'<p>{ESC(v(p))}</p>' for p in D['research']['intro'])+f'<h2>{t("methods")}</h2><p>{ESC(v(D["research"]["methods"]))}</p>'
+  paragraphs=''.join(f'<p>{ESC(v(p)).replace("GABA_A", "GABA<sub>A</sub>")}</p>' for p in D['research']['intro'])+f'<h2>{t("methods")}</h2><p>{ESC(v(D["research"]["methods"]))}</p>'
   aside=f'<aside class="research-aside"><h2>{t("areas")}</h2><ul>'+''.join(f'<li><a href="{link('research/'+a["id"])}">{ESC(v(a["title"]))}</a></li>' for a in D['research']['areas'])+'</ul></aside>'
   sections=''.join(f'<section class="research-section" id="{a["id"]}"><span class="section-number" aria-hidden="true">0{i+1}</span><div><h2><a href="{link('research/'+a["id"])}">{ESC(v(a["title"]))}</a></h2><p>{ESC(v(a["text"]))}</p><a class="project-link" href="{link('research/'+a["id"])}">{t("read-project")} <span aria-hidden="true">→</span></a></div></section>' for i,a in enumerate(D['research']['areas']))
   body=f'<main id="content" class="page research-page"><h1 class="page-title">{t(page)}</h1><div class="research-overview"><div class="prose">{paragraphs}</div>{aside}</div><div class="research-sections">{sections}</div></main>'

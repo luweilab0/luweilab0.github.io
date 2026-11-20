@@ -10,11 +10,11 @@
   "home": {
     "title": {
       "zh": "欢迎来到陆伟实验室",
-      "en": "Welcome to the Laboratory of Wei Lu"
+      "en": "Welcome to the Lu Laboratory"
     },
     "intro": {
-      "zh": "我们致力于揭示突触发育与功能调控的分子和神经环路机制，探索脑疾病的潜在治疗靶点。",
-      "en": "We investigate the molecular and circuit mechanisms of synaptic development and function, and explore potential therapeutic targets for brain disorders."
+      "zh": "我们致力于研究大脑中的分子活动与行为如何相互作用。",
+      "en": "We are dedicated to investigating how molecules and behaviors interact in the brain."
     },
     "button": {
       "zh": "了解更多",
@@ -24,20 +24,16 @@
   "research": {
     "intro": [
       {
-        "zh": "陆伟实验室关注突触发育与功能调控，以及焦虑、抑郁、麻醉和酒精作用的神经生物学机制。",
-        "en": "The Wei Lu laboratory studies synaptic development and the regulation of synaptic function, together with the neurobiological mechanisms underlying anxiety, depression, anesthesia and the effects of alcohol."
+        "zh": "我们是一支充满热情的团队，希望深入理解大脑中的分子活动与行为如何相互作用。实验室的研究课题通常在充分讨论和交流想法的过程中形成，并常由资深研究人员或博士研究生牵头，团队成员共同推进。",
+        "en": "We are a highly motivated team aiming to provide a deep understanding of how molecules and behaviors interact in the brain. Projects in the lab are typically developed through extensive discussion and brainstorming and are often pursued collaboratively, with a senior scientist or PhD student leading the project."
       },
       {
-        "zh": "我们以啮齿类动物的 GABA 能突触为主要模式系统，研究大脑功能和脑疾病的分子与神经环路机制。",
-        "en": "We use GABAergic synapses in rodents as a primary model system to investigate the molecular and neural circuit mechanisms of brain function and brain disorders."
+        "zh": "我们以啮齿动物的 GABA 能突触为主要模型，研究脑功能与脑疾病背后的分子和神经环路机制。通过鉴定并研究调控突触功能的关键蛋白，我们希望理解健康与疾病状态下的突触机制，并探索靶向 GABA_A 受体及其他分子的治疗新策略。我们进一步从神经环路和系统层面研究这些蛋白如何调控行为与认知，以揭示分子与环路如何协同作用，产生行为与认知。",
+        "en": "We use GABAergic synapses in rodents as a primary model system to investigate the molecular and neural circuit mechanisms underlying brain function and disorders. By identifying and studying key proteins that regulate synaptic function, we aim to understand synaptic mechanisms in health and disease and to explore new therapeutic strategies targeting GABA_A receptors and other molecules. By discovering the neural circuit and systems-level mechanisms through which these proteins regulate behavior and cognition, we aim to bridge how molecules and circuits work together to generate behavior and cognition."
       },
       {
-        "zh": "通过发现与研究调控突触功能的蛋白，我们希望加深对突触功能及其病理机制的理解，并探索靶向 GABAᴀ 受体的新一代脑疾病治疗策略。",
-        "en": "By identifying and studying proteins that regulate synaptic function, we aim to understand synaptic mechanisms in health and disease and explore new therapeutic strategies targeting GABAᴀ receptors."
-      },
-      {
-        "zh": "这些研究将丰富我们对 GABA 能突触及其在大脑中的作用和功能调控的理解，为癫痫、焦虑症、失眠和酒精成瘾等脑疾病提供潜在的新药物靶点。",
-        "en": "These studies aim to deepen our understanding of GABAergic synapses and their regulation in the brain, and identify potential drug targets for disorders including epilepsy, anxiety, insomnia and alcohol addiction."
+        "zh": "这些研究将加深我们对脑内 GABA 能突触及其调控机制的理解，并为癫痫、焦虑、抑郁、失眠和酒精成瘾等疾病寻找潜在的药物靶点。",
+        "en": "These studies will deepen our understanding of GABAergic synapses and their regulation in the brain and will identify potential drug targets for disorders including epilepsy, anxiety, depression, insomnia, and alcohol addiction."
       }
     ],
     "areas": [
