@@ -24,8 +24,8 @@
   "research": {
     "intro": [
       {
-        "zh": "我们是一支充满热情的团队，希望深入理解大脑中的分子活动与行为如何相互作用。实验室的研究课题通常在充分讨论和交流想法的过程中形成，并常由资深研究人员或博士研究生牵头，团队成员共同推进。",
-        "en": "We are a highly motivated team aiming to provide a deep understanding of how molecules and behaviors interact in the brain. Projects in the lab are typically developed through extensive discussion and brainstorming and are often pursued collaboratively, with a senior scientist or PhD student leading the project."
+        "zh": "我们致力于研究分子与行为如何相互作用，进而产生多样的脑功能。实验室的研究课题通常在充分讨论和交流想法的过程中形成，并常由资深研究人员或博士研究生牵头，团队成员共同推进。",
+        "en": "We are dedicated to studying how molecules and behavior interact to produce diverse brain functions. Projects in the lab are typically developed through extensive discussion and brainstorming and are often pursued collaboratively, with a senior scientist or PhD student leading the project."
       },
       {
         "zh": "我们以啮齿动物的 GABA 能突触为主要模型，研究脑功能与脑疾病背后的分子和神经环路机制。通过鉴定并研究调控突触功能的关键蛋白，我们希望理解健康与疾病状态下的突触机制，并探索靶向 GABA_A 受体及其他分子的治疗新策略。我们进一步从神经环路和系统层面研究这些蛋白如何调控行为与认知，以揭示分子与环路如何协同作用，产生行为与认知。",
@@ -264,8 +264,8 @@
   },
   "hiring": {
     "intro": {
-      "zh": "深圳医学科学院分子认知实验室（陆伟课题组）诚邀有志于神经科学研究的同仁加入。",
-      "en": "The Laboratory of Molecular Cognition (Wei Lu Lab) at the Shenzhen Medical Academy of Research and Translation welcomes applicants interested in neuroscience research."
+      "zh": "我们期待才华出众、热爱神经科学的伙伴加入，一起探索大脑产生意识的基本原理，在一个让想象力自由驰骋的环境中追求科学发现。",
+      "en": "We are looking for talented fellows who are truly interested in neuroscience, in discovering the core principles that enable the brain to give rise to consciousness, and in pursuing science in an environment where the only limit is their own imagination."
     },
     "positions": [
       {
